@@ -547,6 +547,13 @@ h3 {
   padding: 0 28px 24px 48px;
 }
 
+.publication-link {
+  color: var(--teal);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .table-wrap {
   overflow-x: auto;
   padding: 0 24px 24px;
