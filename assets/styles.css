@@ -289,6 +289,8 @@ h1 {
 h2 {
   max-width: 780px;
   font-size: 2.55rem;
+  overflow-wrap: break-word;
+  text-wrap: balance;
 }
 
 h3 {
@@ -594,6 +596,10 @@ h3 {
   padding: 0;
 }
 
+.detail-panel + .research-grid {
+  margin-top: 28px;
+}
+
 .detail-panel summary {
   cursor: pointer;
   padding: 20px 24px;
@@ -871,7 +877,7 @@ th {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.86rem;
   }
 
   .lead,
@@ -913,6 +919,10 @@ th {
   .publication-list {
     padding-left: 34px;
     padding-right: 18px;
+  }
+
+  .detail-panel + .research-grid {
+    margin-top: 22px;
   }
 
   .footer-inner {
