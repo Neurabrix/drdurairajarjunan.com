@@ -17,7 +17,8 @@ Open the local URL printed by Vite.
 npm run build
 ```
 
-The production files are written to `dist/`.
+The production files are copied to `_site/`. GitHub Pages publishes those
+static files directly.
 
 ## Custom Domain
 

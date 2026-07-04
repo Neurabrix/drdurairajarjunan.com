@@ -4,8 +4,7 @@
   "private": true,
   "description": "Static doctor profile website for drdurairajarjunan.com.",
   "scripts": {
-    "build": "vite build",
-    "postbuild": "cp CNAME robots.txt sitemap.xml dist/",
+    "build": "rm -rf _site && mkdir _site && cp index.html CNAME robots.txt sitemap.xml _site/ && cp -R assets _site/assets",
     "start": "vite --host 0.0.0.0"
   },
   "devDependencies": {
