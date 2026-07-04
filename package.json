@@ -1,0 +1,14 @@
+{
+  "name": "drdurairajarjunan-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static doctor profile website for drdurairajarjunan.com.",
+  "scripts": {
+    "build": "vite build",
+    "postbuild": "cp CNAME robots.txt sitemap.xml dist/",
+    "start": "vite --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "vite": "^8.1.3"
+  }
+}
