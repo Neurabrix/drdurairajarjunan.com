@@ -93,24 +93,27 @@ summary:focus-visible {
 
 .hero-section {
   background: linear-gradient(180deg, var(--ivory), #ffffff 88%);
-  padding: 56px 0 48px;
+  padding: 48px 0 46px;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(300px, 0.88fr) minmax(360px, 1.12fr);
-  gap: 58px;
+  grid-template-columns: minmax(260px, 380px) minmax(0, 1fr);
+  gap: clamp(30px, 5vw, 56px);
   align-items: center;
 }
 
 .portrait-panel {
   display: grid;
   gap: 16px;
+  width: 100%;
+  max-width: 380px;
+  justify-self: end;
 }
 
 .portrait-frame {
   overflow: hidden;
-  padding: 12px;
+  padding: 10px;
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -120,7 +123,8 @@ summary:focus-visible {
 .portrait-image {
   display: block;
   width: 100%;
-  min-height: 500px;
+  height: clamp(360px, 42vw, 500px);
+  min-height: 0;
   object-fit: cover;
   object-position: center top;
   border-radius: 6px;
@@ -157,7 +161,7 @@ h3 {
 h1 {
   max-width: 720px;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 5rem;
+  font-size: clamp(3.2rem, 6vw, 5rem);
   font-weight: 500;
 }
 
@@ -566,13 +570,21 @@ th {
     display: none;
   }
 
-  .hero-grid,
   .two-column,
   .credential-layout,
   .split-grid,
   .research-grid,
   .contact-layout {
     grid-template-columns: 1fr;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .portrait-panel {
+    max-width: 320px;
   }
 
   .trust-grid,
@@ -585,7 +597,18 @@ th {
   }
 
   .portrait-image {
-    min-height: 390px;
+    height: 390px;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait-panel {
+    max-width: 420px;
+    justify-self: center;
   }
 }
 
@@ -635,7 +658,7 @@ th {
   }
 
   .portrait-image {
-    min-height: 320px;
+    height: 320px;
   }
 
   .trust-grid,
