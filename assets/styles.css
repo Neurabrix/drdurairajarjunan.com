@@ -100,6 +100,42 @@ summary:focus-visible {
   color: var(--teal);
 }
 
+.quick-access {
+  position: sticky;
+  top: 72px;
+  z-index: 19;
+  background: rgba(247, 242, 234, 0.96);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(14px);
+}
+
+.quick-access-inner {
+  display: flex;
+  min-height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 10px 0;
+}
+
+.quick-contact-links {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button.button-compact {
+  min-height: 40px;
+  padding: 0 14px;
+  font-size: 0.92rem;
+}
+
+.social-links.quick-social-links {
+  flex: 0 0 auto;
+  margin-top: 0;
+}
+
 .hero-section {
   background: linear-gradient(180deg, var(--ivory), #ffffff 88%);
   padding: 48px 0 46px;
@@ -197,8 +233,7 @@ h3 {
   font-size: 1.15rem;
 }
 
-.actions,
-.contact-actions {
+.actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -614,6 +649,12 @@ th {
     display: none;
   }
 
+  .quick-access-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
   .two-column,
   .credential-layout,
   .split-grid,
@@ -668,6 +709,18 @@ th {
 
   .site-header .button {
     display: none;
+  }
+
+  .quick-access {
+    position: static;
+  }
+
+  .quick-contact-links {
+    width: 100%;
+  }
+
+  .quick-contact-links .button {
+    flex: 1 1 auto;
   }
 
   .brand span:last-child {
