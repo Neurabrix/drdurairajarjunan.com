@@ -121,6 +121,7 @@ summary:focus-visible {
 .quick-contact-links {
   display: flex;
   min-width: 0;
+  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -129,6 +130,40 @@ summary:focus-visible {
   min-height: 40px;
   padding: 0 14px;
   font-size: 0.92rem;
+}
+
+.quick-call-link {
+  gap: 8px;
+}
+
+.quick-call-link svg,
+.quick-icon-button svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.9;
+}
+
+.quick-icon-button {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  color: var(--teal-dark);
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.quick-icon-button:hover {
+  border-color: var(--teal);
+  box-shadow: 0 10px 22px rgba(18, 60, 57, 0.1);
+  transform: translateY(-1px);
 }
 
 .social-links.quick-social-links {
