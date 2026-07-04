@@ -113,6 +113,7 @@ summary:focus-visible {
   display: flex;
   min-height: 64px;
   align-items: center;
+  flex-wrap: nowrap;
   justify-content: space-between;
   gap: 18px;
   padding: 10px 0;
@@ -122,7 +123,7 @@ summary:focus-visible {
   display: flex;
   min-width: 0;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 10px;
 }
 
@@ -168,6 +169,7 @@ summary:focus-visible {
 
 .social-links.quick-social-links {
   flex: 0 0 auto;
+  flex-wrap: nowrap;
   margin-top: 0;
 }
 
@@ -684,12 +686,6 @@ th {
     display: none;
   }
 
-  .quick-access-inner {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 12px;
-  }
-
   .two-column,
   .credential-layout,
   .split-grid,
@@ -750,12 +746,19 @@ th {
     position: static;
   }
 
+  .quick-access-inner {
+    min-height: 54px;
+    gap: 10px;
+    padding: 8px 0;
+  }
+
   .quick-contact-links {
-    width: 100%;
+    width: auto;
+    flex: 0 0 auto;
   }
 
   .quick-contact-links .button {
-    flex: 1 1 auto;
+    flex: 0 0 auto;
   }
 
   .brand span:last-child {
@@ -821,5 +824,44 @@ th {
     background: rgba(255, 255, 255, 0.96);
     border-top: 1px solid var(--border);
     backdrop-filter: blur(12px);
+  }
+}
+
+@media (max-width: 540px) {
+  .quick-access-inner {
+    justify-content: flex-start;
+    gap: 6px;
+  }
+
+  .quick-contact-links {
+    gap: 5px;
+  }
+
+  .button.button-compact.quick-call-link,
+  .quick-icon-button,
+  .social-link {
+    width: 36px;
+    height: 36px;
+    min-height: 36px;
+    padding: 0;
+  }
+
+  .quick-call-link span {
+    display: none;
+  }
+
+  .quick-call-link svg,
+  .quick-icon-button svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .social-links.quick-social-links {
+    gap: 5px;
+  }
+
+  .social-link svg {
+    width: 19px;
+    height: 19px;
   }
 }
