@@ -422,6 +422,10 @@ h3 {
   padding: 72px 0;
 }
 
+#credentials .section-block {
+  padding: 0;
+}
+
 .section-block h2 {
   margin-bottom: 26px;
 }
@@ -489,6 +493,7 @@ h3 {
 }
 
 .research-section {
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 
@@ -777,6 +782,7 @@ th {
   }
 
   .research-section {
+    padding-top: 28px;
     padding-bottom: 28px;
   }
 
