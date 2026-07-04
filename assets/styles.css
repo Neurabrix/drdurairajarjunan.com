@@ -367,8 +367,7 @@ h3 {
 .section-copy p:not(.eyebrow),
 .clean-list,
 .timeline,
-.publication-list,
-.map-panel p {
+.publication-list {
   color: var(--muted);
   font-size: 1.02rem;
 }
@@ -429,8 +428,7 @@ h3 {
 
 .credential-layout,
 .split-grid,
-.research-grid,
-.contact-layout {
+.research-grid {
   display: grid;
   gap: 22px;
 }
@@ -441,14 +439,8 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.contact-layout {
-  grid-template-columns: minmax(0, 1fr) 380px;
-  align-items: stretch;
-}
-
 .info-block,
-.detail-panel,
-.map-panel {
+.detail-panel {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -563,29 +555,6 @@ th {
   background: var(--mint);
 }
 
-.map-panel {
-  display: grid;
-  min-height: 260px;
-  place-content: center;
-  padding: 26px;
-  text-align: center;
-  background:
-    linear-gradient(90deg, rgba(18, 60, 57, 0.05) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(18, 60, 57, 0.05) 1px, transparent 1px),
-    var(--mint);
-  background-size: 28px 28px;
-}
-
-.map-panel span {
-  color: var(--teal);
-  font-weight: 800;
-}
-
-.map-panel strong {
-  color: var(--teal-dark);
-  font-size: 2rem;
-}
-
 .social-links {
   display: flex;
   flex-wrap: wrap;
@@ -668,8 +637,7 @@ th {
   .two-column,
   .credential-layout,
   .split-grid,
-  .research-grid,
-  .contact-layout {
+  .research-grid {
     grid-template-columns: 1fr;
   }
 
