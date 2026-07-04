@@ -621,6 +621,11 @@ th {
   gap: 18px;
 }
 
+.footer a {
+  color: var(--white);
+  font-weight: 800;
+}
+
 .mobile-action {
   display: none;
 }
