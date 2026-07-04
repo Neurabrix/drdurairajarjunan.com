@@ -19,7 +19,17 @@ html {
   scroll-behavior: smooth;
 }
 
+#about,
+#appointment,
+#care,
+#credentials,
+#research,
+#publications {
+  scroll-margin-top: 142px;
+}
+
 body {
+  overflow-x: hidden;
   margin: 0;
   color: var(--ink);
   background: var(--white);
@@ -64,6 +74,56 @@ summary:focus-visible {
   background: rgba(255, 255, 255, 0.94);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(14px);
+}
+
+.section-nav {
+  position: sticky;
+  top: 72px;
+  z-index: 19;
+  background: rgba(247, 242, 234, 0.96);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 8px 20px rgba(18, 60, 57, 0.06);
+  backdrop-filter: blur(12px);
+}
+
+.section-nav-inner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 50px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.section-nav-inner::-webkit-scrollbar {
+  display: none;
+}
+
+.section-nav a {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  padding: 7px 12px;
+  color: var(--teal-dark);
+  background: var(--white);
+  border: 1px solid #cbe0db;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.section-nav a:hover {
+  border-color: var(--teal);
+  box-shadow: 0 8px 18px rgba(18, 60, 57, 0.08);
+  transform: translateY(-1px);
+}
+
+.section-nav a:focus-visible {
+  outline: 3px solid rgba(201, 155, 82, 0.58);
+  outline-offset: 2px;
 }
 
 .brand {
@@ -199,6 +259,7 @@ summary:focus-visible {
 
 .hero-copy {
   max-width: 680px;
+  min-width: 0;
 }
 
 .eyebrow {
@@ -224,6 +285,7 @@ h1 {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(3.2rem, 6vw, 5rem);
   font-weight: 500;
+  overflow-wrap: break-word;
 }
 
 h2 {
@@ -746,9 +808,34 @@ th {
     width: min(100% - 28px, 1180px);
   }
 
+  #about,
+  #appointment,
+  #care,
+  #credentials,
+  #research,
+  #publications {
+    scroll-margin-top: 116px;
+  }
+
   .site-header {
     min-height: 64px;
     padding-inline: 14px;
+  }
+
+  .section-nav {
+    top: 64px;
+  }
+
+  .section-nav-inner {
+    width: 100%;
+    min-height: 46px;
+    padding-inline: 14px;
+  }
+
+  .section-nav a {
+    min-height: 32px;
+    padding: 6px 10px;
+    font-size: 0.84rem;
   }
 
   .brand span:last-child {
@@ -763,10 +850,26 @@ th {
 
   .hero-grid {
     gap: 28px;
+    overflow: hidden;
+  }
+
+  .portrait-panel {
+    max-width: 100%;
+    justify-self: stretch;
+  }
+
+  .hero-copy,
+  .credential-line,
+  .lead {
+    width: calc(100vw - 28px);
+    max-width: calc(100vw - 28px);
+    white-space: normal;
+    overflow-wrap: anywhere;
   }
 
   h1 {
-    font-size: 3rem;
+    max-width: calc(100vw - 28px);
+    font-size: 2.72rem;
   }
 
   h2 {
@@ -833,6 +936,16 @@ th {
 
 @media (max-width: 500px) {
   .brand span:last-child {
+    display: none;
+  }
+
+  .header-actions {
+    max-width: calc(100vw - 80px);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .header-actions::-webkit-scrollbar {
     display: none;
   }
 }
