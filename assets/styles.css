@@ -310,9 +310,22 @@ h3 {
 }
 
 .credential-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
   margin: 16px 0 0;
   color: var(--teal);
   font-weight: 800;
+  line-height: 1.35;
+}
+
+.credential-line span {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.credential-line span:not(:last-child)::after {
+  content: ",";
 }
 
 .lead,
@@ -560,6 +573,10 @@ h3 {
 .split-grid,
 .research-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.credential-layout + .split-grid {
+  margin-top: 22px;
 }
 
 .info-block,
