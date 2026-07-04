@@ -38,6 +38,15 @@ summary:focus-visible {
   outline-offset: 3px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
 .container {
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
@@ -529,20 +538,55 @@ th {
 .social-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
   margin-top: 22px;
 }
 
-.social-links a {
+.social-link {
   display: inline-flex;
-  min-height: 36px;
+  width: 44px;
+  height: 44px;
   align-items: center;
-  padding: 0 12px;
+  justify-content: center;
   color: var(--teal-dark);
-  background: var(--mint);
+  background: var(--white);
   border: 1px solid #cbe0db;
   border-radius: 8px;
-  font-weight: 700;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.social-link:hover {
+  border-color: currentColor;
+  box-shadow: 0 10px 22px rgba(18, 60, 57, 0.1);
+  transform: translateY(-1px);
+}
+
+.social-link svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.social-link.instagram svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+}
+
+.social-link.facebook {
+  color: #1877f2;
+}
+
+.social-link.instagram {
+  color: #c13584;
+}
+
+.social-link.linkedin {
+  color: #0a66c2;
+}
+
+.social-link.x-twitter {
+  color: #111111;
 }
 
 .footer {
