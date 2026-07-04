@@ -488,6 +488,10 @@ h3 {
   margin-bottom: 26px;
 }
 
+.research-section {
+  padding-bottom: 40px;
+}
+
 .research-highlights {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -610,15 +614,19 @@ th {
 }
 
 .footer {
-  padding: 28px 0;
+  padding: 18px 0;
   color: rgba(255, 255, 255, 0.76);
   background: var(--teal-dark);
 }
 
 .footer-inner {
   display: flex;
-  justify-content: space-between;
-  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  text-align: center;
+  font-size: 0.9rem;
 }
 
 .footer a {
@@ -768,6 +776,10 @@ th {
     padding: 48px 0;
   }
 
+  .research-section {
+    padding-bottom: 28px;
+  }
+
   .publication-list {
     padding-left: 34px;
     padding-right: 18px;
@@ -775,6 +787,7 @@ th {
 
   .footer-inner {
     display: grid;
+    justify-items: center;
   }
 
   .mobile-action {
