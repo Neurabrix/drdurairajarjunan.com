@@ -422,6 +422,14 @@ h3 {
   padding: 72px 0;
 }
 
+#care {
+  padding-bottom: 36px;
+}
+
+#credentials {
+  padding-top: 36px;
+}
+
 #credentials .section-block {
   padding: 0;
 }
@@ -779,6 +787,14 @@ th {
   .content-band,
   .section-block {
     padding: 48px 0;
+  }
+
+  #care {
+    padding-bottom: 28px;
+  }
+
+  #credentials {
+    padding-top: 28px;
   }
 
   .research-section {
