@@ -204,6 +204,18 @@ summary:focus-visible {
   transform: translateY(-1px);
 }
 
+.quick-whatsapp-link {
+  color: var(--white);
+  background: #128c7e;
+  border-color: #128c7e;
+}
+
+.quick-whatsapp-link:hover {
+  color: var(--white);
+  background: #0e756a;
+  border-color: #0e756a;
+}
+
 .social-links.quick-social-links {
   flex: 0 0 auto;
   flex-wrap: nowrap;
