@@ -231,7 +231,7 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: minmax(260px, 380px) minmax(0, 1fr);
   gap: clamp(30px, 5vw, 56px);
-  align-items: center;
+  align-items: start;
 }
 
 .portrait-panel {
