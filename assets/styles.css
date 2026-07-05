@@ -476,6 +476,11 @@ h3 {
   background: linear-gradient(180deg, var(--white), #fbfdfc);
 }
 
+.care-accordion-item[open] summary {
+  color: var(--teal-dark);
+  background: linear-gradient(135deg, var(--mint), #f8fcfb);
+}
+
 .care-accordion-item summary {
   position: relative;
   cursor: pointer;
@@ -532,8 +537,17 @@ h3 {
   line-height: 1.18;
 }
 
+.care-accordion-item[open] .care-summary-label {
+  color: #53726d;
+}
+
+.care-accordion-item[open] .care-summary-title {
+  color: var(--teal-dark);
+}
+
 .care-accordion-body {
   padding: 0 22px 22px 24px;
+  background: linear-gradient(180deg, #f7fbfa, var(--white));
 }
 
 .care-accordion-body::before {
@@ -557,8 +571,8 @@ h3 {
   min-width: 0;
   padding: 12px 14px 12px 34px;
   color: var(--teal-dark);
-  background: var(--white);
-  border: 1px solid #dfe9e6;
+  background: #f8fcfb;
+  border: 1px solid #cfe3de;
   border-radius: 8px;
   font-size: 0.96rem;
   font-weight: 800;
@@ -884,6 +898,16 @@ h3 {
   padding: 22px;
 }
 
+.research-highlights div:first-child {
+  background: linear-gradient(135deg, var(--mint), #f8fcfb);
+  border-color: #bedbd5;
+}
+
+.research-highlights div:not(:first-child) {
+  background: linear-gradient(180deg, var(--mint), #fbfdfc);
+  border-color: #cbe0db;
+}
+
 .research-highlights strong {
   display: block;
   color: var(--teal-dark);
@@ -892,6 +916,14 @@ h3 {
 
 .research-highlights span {
   color: var(--muted);
+}
+
+.research-highlights div:first-child strong {
+  color: var(--teal-dark);
+}
+
+.research-highlights div:first-child span {
+  color: #4d655f;
 }
 
 .detail-panel {
@@ -936,7 +968,8 @@ h3 {
 }
 
 .detail-panel[open] summary {
-  border-bottom: 1px solid var(--border);
+  color: var(--teal-dark);
+  background: linear-gradient(135deg, var(--mint), #f8fcfb);
 }
 
 .detail-panel[open] summary::after {
@@ -950,6 +983,7 @@ h3 {
   display: grid;
   gap: 12px;
   padding: 20px 28px 24px 48px;
+  background: linear-gradient(180deg, #f8fcfb, var(--white) 18%);
 }
 
 .publication-link {
