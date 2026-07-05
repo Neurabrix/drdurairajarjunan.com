@@ -29,7 +29,7 @@
       content="Diabetes, obesity, PCOS/PCOD/PMOS, metabolic bone, pituitary and adrenal endocrine care at KMCH, Coimbatore."
     />
     <meta name="twitter:image" content="https://drdurairajarjunan.com/assets/durairaj-photo.jpg" />
-    <link rel="stylesheet" href="assets/styles.css?v=20260705-content-cleanup" />
+    <link rel="stylesheet" href="assets/styles.css?v=20260705-care-accordion" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -448,18 +448,56 @@
       <section id="care" class="container section-block">
         <p class="eyebrow">Care Areas</p>
         <h2>Endocrinology care areas for patients in Coimbatore</h2>
-        <div class="condition-grid">
-          <span>Obesity</span>
-          <span>Young-onset Diabetes Mellitus</span>
-          <span>Gestational Diabetes Mellitus</span>
-          <span>Polycystic Ovarian Syndrome (PCOS/PCOD/PMOS)</span>
-          <span>Metabolic Bone Disorders</span>
-          <span>Post-menopausal Osteoporosis</span>
-          <span>Glucocorticoid-induced Osteoporosis</span>
-          <span>Pituitary Disorders</span>
-          <span>Adrenal Disorders</span>
-          <span>Testicular and Ovarian Diseases</span>
-          <span>Endocrine Oncology</span>
+        <div class="care-accordion" aria-label="Endocrinology care hierarchy">
+          <details class="care-accordion-item" open>
+            <summary>Obesity &amp; Metabolic Syndrome</summary>
+            <div class="care-accordion-body">
+              <ul class="care-list">
+                <li>Weight Management</li>
+                <li>Fatty liver disorder (MASLD)</li>
+                <li>
+                  <span>Weight Reduction Therapy</span>
+                  <ul>
+                    <li>Semaglutide - GLP-1 Analogs (Ozempic, Wegovy)</li>
+                    <li>Tirzepatide (Mounjaro, Yurpeak)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="care-accordion-item">
+            <summary>Diabetes</summary>
+            <div class="care-accordion-body">
+              <ul class="care-list care-list-grid">
+                <li>Type 1 Diabetes</li>
+                <li>Type 2 Diabetes</li>
+                <li>Gestational Diabetes</li>
+                <li>Monogenic Diabetes</li>
+                <li>MODY</li>
+                <li>LADA</li>
+                <li>Mitochondrial Diabetes</li>
+                <li>Lipodystrophy</li>
+              </ul>
+            </div>
+          </details>
+
+          <div class="care-accordion-row">Adrenal Disorders</div>
+
+          <details class="care-accordion-item">
+            <summary>Thyroid Disorders</summary>
+            <div class="care-accordion-body">
+              <ul class="care-list care-list-grid">
+                <li>Hyper &amp; Hypo Thyroidism</li>
+                <li>Thyroid Nodules</li>
+                <li>Thyroid Cancers</li>
+              </ul>
+            </div>
+          </details>
+
+          <div class="care-accordion-row">Parathyroid Disorders</div>
+          <div class="care-accordion-row">Testicular and Ovarian Disorders</div>
+          <div class="care-accordion-row">Metabolic Bone Disorder</div>
         </div>
       </section>
 
