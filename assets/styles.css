@@ -416,6 +416,27 @@ h3 {
   font-weight: 700;
 }
 
+.service-topic-nav a {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  padding: 7px 12px;
+  color: var(--teal-dark);
+  background: linear-gradient(180deg, var(--white), #fbfdfc);
+  border: 1px solid #cbe0db;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.service-topic-nav a:hover,
+.service-topic-nav a[aria-current="page"] {
+  border-color: var(--teal);
+  box-shadow: 0 8px 18px rgba(18, 60, 57, 0.08);
+  transform: translateY(-1px);
+}
+
 #care h2 {
   max-width: 100%;
   margin-bottom: 0;
@@ -979,6 +1000,76 @@ h3 {
   border-color: var(--teal);
 }
 
+.service-page {
+  background: var(--white);
+}
+
+.service-hero {
+  padding: 56px 0 46px;
+  background: linear-gradient(180deg, var(--ivory), #ffffff 88%);
+}
+
+.service-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 42px;
+  align-items: start;
+}
+
+.service-page h1 {
+  max-width: 860px;
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
+}
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  padding: 24px;
+  background: linear-gradient(180deg, var(--white), #fbfdfc);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: var(--gold);
+}
+
+.service-card h2 {
+  margin-bottom: 14px;
+  font-size: 1.55rem;
+}
+
+.service-card p {
+  color: var(--muted);
+}
+
+.service-body {
+  padding: 44px 0 72px;
+}
+
+.service-topic-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.service-content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.service-content-grid .info-block h2 {
+  margin-bottom: 16px;
+  font-size: 1.55rem;
+}
+
 .publication-list {
   display: grid;
   gap: 12px;
@@ -1122,7 +1213,9 @@ th {
   .two-column,
   .credential-layout,
   .split-grid,
-  .research-grid {
+  .research-grid,
+  .service-hero-grid,
+  .service-content-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1356,6 +1449,23 @@ th {
   .content-band,
   .section-block {
     padding: 48px 0;
+  }
+
+  .service-hero {
+    padding: 40px 0 34px;
+  }
+
+  .service-page h1 {
+    max-width: calc(100vw - 28px);
+    font-size: 2.42rem;
+  }
+
+  .service-body {
+    padding: 36px 0 54px;
+  }
+
+  .service-card {
+    padding: 20px 18px;
   }
 
   #care {

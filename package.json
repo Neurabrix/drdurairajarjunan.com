@@ -4,7 +4,8 @@
   "private": true,
   "description": "Static doctor profile website for drdurairajarjunan.com.",
   "scripts": {
-    "build": "rm -rf _site && mkdir _site && cp index.html CNAME robots.txt sitemap.xml _site/ && cp -R assets _site/assets",
+    "generate:seo": "node scripts/generate-seo-pages.mjs",
+    "build": "npm run generate:seo && rm -rf _site && mkdir _site && cp index.html CNAME robots.txt sitemap.xml llms.txt favicon.svg _site/ && cp -R assets _site/assets && cp -R diabetes-specialist-coimbatore obesity-weight-management-coimbatore thyroid-specialist-coimbatore pcos-pcod-pmos-endocrinologist-coimbatore osteoporosis-metabolic-bone-disorders-coimbatore adrenal-parathyroid-disorders-coimbatore publications _site/",
     "start": "vite --host 0.0.0.0"
   },
   "devDependencies": {

@@ -25,10 +25,18 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Prepare static site
         run: |
+          node scripts/generate-seo-pages.mjs
           rm -rf _site
           mkdir _site
-          cp index.html CNAME robots.txt sitemap.xml _site/
+          cp index.html CNAME robots.txt sitemap.xml llms.txt favicon.svg _site/
           cp -R assets _site/assets
+          cp -R diabetes-specialist-coimbatore _site/diabetes-specialist-coimbatore
+          cp -R obesity-weight-management-coimbatore _site/obesity-weight-management-coimbatore
+          cp -R thyroid-specialist-coimbatore _site/thyroid-specialist-coimbatore
+          cp -R pcos-pcod-pmos-endocrinologist-coimbatore _site/pcos-pcod-pmos-endocrinologist-coimbatore
+          cp -R osteoporosis-metabolic-bone-disorders-coimbatore _site/osteoporosis-metabolic-bone-disorders-coimbatore
+          cp -R adrenal-parathyroid-disorders-coimbatore _site/adrenal-parathyroid-disorders-coimbatore
+          cp -R publications _site/publications
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
