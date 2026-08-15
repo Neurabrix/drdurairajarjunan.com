@@ -1,5 +1,12 @@
 # Revision history
 
+## 2026-08-15 — GitHub Pages runtime maintenance
+
+- Updated the checkout, Pages configuration, and Pages artifact actions to
+  their current Node 24-compatible major versions after the production release
+  exposed Node 20 deprecation warnings.
+- Kept the production deploy action on its current Node 24-compatible major.
+
 ## 2026-08-15 — Local endocrinology search optimization
 
 - Expanded the diabetes, thyroid, obesity, PCOS, osteoporosis, adrenal, and
