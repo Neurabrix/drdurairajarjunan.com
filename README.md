@@ -29,3 +29,6 @@ drdurairajarjunan.com
 ```
 
 See `DEPLOY.md` for the hosting and DNS setup.
+
+See `SEO-CHECKLIST.md` for the query map, Search Console steps, local profile
+work, and monthly measurement checklist.

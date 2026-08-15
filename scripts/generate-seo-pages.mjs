@@ -10,23 +10,65 @@ const site = {
   emailHref: "mailto:duraipgi@gmail.com",
   mapHref: "https://maps.app.goo.gl/kianTCpHuHG1sExS7",
   image: "https://drdurairajarjunan.com/assets/durairaj-photo.jpg",
-  dateModified: "2026-07-06"
+  dateModified: "2026-08-15"
 };
 
 const carePages = [
   {
     slug: "obesity-weight-management-coimbatore",
+    navTitle: "Obesity & Weight",
     eyebrow: "Care Area",
     title: "Obesity & Metabolic Syndrome",
-    pageTitle: "Obesity and Metabolic Syndrome in Coimbatore",
-    label: "Lifestyle, nutrition, exercise, GLP-1/GIP therapy",
+    pageTitle: "Obesity Specialist and Weight Loss Doctor in Coimbatore",
+    seoTitle: "Obesity Specialist & Weight Loss Doctor in Coimbatore",
+    label: "Medical weight management for obesity, metabolic syndrome and related hormone concerns",
     meta:
-      "Obesity and metabolic syndrome care-area page for Dr. Durairaj Arjunan, consultant endocrinologist at KMCH, Coimbatore.",
+      "Consult an obesity specialist and weight loss doctor at KMCH Coimbatore for medical weight management, metabolic syndrome and hormone evaluation.",
+    intro: [
+      "Dr. Durairaj Arjunan is a consultant endocrinologist at KMCH, Coimbatore, with a clinical and research focus that includes obesity, diabetes and metabolic health. He evaluates weight concerns in the context of the whole person, including blood glucose, thyroid function, PCOS, fatty liver disease, medicines and other factors that may affect weight.",
+      "People looking for an obesity doctor, weight loss doctor, weight management specialist, bariatric physician or metabolic specialist in Coimbatore may be seeking medical, non-surgical care. Treatment recommendations depend on a clinical assessment; weight-loss medicines are not suitable for everyone and should be used only with medical supervision."
+    ],
+    aliases: [
+      "obesity doctor in Coimbatore",
+      "weight loss doctor in Coimbatore",
+      "weight management specialist in Coimbatore",
+      "metabolic specialist in Coimbatore"
+    ],
+    whenToConsult: [
+      "Weight gain with diabetes, prediabetes, PCOS, fatty liver disease or high blood pressure",
+      "Difficulty losing weight despite sustained nutrition and activity changes",
+      "Concern that thyroid, cortisol or another hormone condition may be affecting weight",
+      "Questions about whether prescription weight-management treatment is appropriate"
+    ],
+    approach: [
+      "Medical history, weight trajectory and current medicine review",
+      "Assessment for metabolic and endocrine contributors when clinically indicated",
+      "Individualized nutrition, activity and behavior goals",
+      "Discussion of evidence-based medicines, benefits, limitations and follow-up when appropriate"
+    ],
+    faqs: [
+      {
+        q: "Which doctor should I consult for obesity or difficult weight loss?",
+        a: "An endocrinologist can assess obesity alongside diabetes, thyroid disease, PCOS and other metabolic or hormonal concerns. Some patients may also need coordinated support from a dietitian, psychologist, sleep specialist or bariatric surgeon."
+      },
+      {
+        q: "Is an obesity specialist the same as a bariatric surgeon?",
+        a: "No. An endocrinologist or obesity-medicine doctor provides medical, non-surgical assessment and treatment. A bariatric surgeon evaluates surgical weight-loss options. The appropriate route depends on your health, goals and clinical assessment."
+      },
+      {
+        q: "Can I take semaglutide or tirzepatide for weight loss?",
+        a: "These prescription medicines may be considered for some patients after a medical assessment. Suitability, side effects, contraindications, dose escalation and ongoing monitoring should be discussed with a qualified doctor."
+      },
+      {
+        q: "Where can I consult a weight loss doctor at KMCH Coimbatore?",
+        a: "Dr. Durairaj Arjunan consults at KMCH Main Center, 99 Avanashi Road, Coimbatore. Call +91 90412 50378 for current appointment availability."
+      }
+    ],
     items: [
       "Lifestyle medicine",
       "Personalized Diet and Medical Nutrition Therapy",
       "Exercise program",
-      "Diabetes Reversal Program",
+      "Diabetes remission assessment and support",
       "Weight Management",
       "Fatty liver disorder (MASLD)"
     ],
@@ -40,14 +82,58 @@ const carePages = [
   },
   {
     slug: "diabetes-specialist-coimbatore",
+    navTitle: "Diabetes",
     eyebrow: "Care Area",
     title: "Diabetes",
-    pageTitle: "Diabetes Care Area in Coimbatore",
-    label: "Type 1, type 2, gestational and complex diabetes",
+    pageTitle: "Diabetes Specialist and Diabetologist in Coimbatore",
+    seoTitle: "Diabetes Specialist in Coimbatore | Dr Durairaj Arjunan",
+    label: "Specialist evaluation and ongoing care for type 1, type 2, gestational and complex diabetes",
     meta:
-      "Diabetes care-area page for Dr. Durairaj Arjunan, consultant endocrinologist at KMCH, Coimbatore.",
+      "Consult Dr. Durairaj Arjunan, diabetes specialist and endocrinologist at KMCH Coimbatore, for type 1, type 2, gestational and complex diabetes.",
+    intro: [
+      "Dr. Durairaj Arjunan is a consultant endocrinologist and diabetes specialist at KMCH, Coimbatore. His diabetes practice includes type 1 and type 2 diabetes, diabetes in pregnancy, young-onset diabetes and less common forms such as MODY, LADA, mitochondrial diabetes and lipodystrophy.",
+      "In everyday language, patients may use diabetes doctor, diabetologist, sugar doctor or sugar specialist for a clinician who manages high blood glucose. An endocrinologist has specialist training in diabetes as well as thyroid, obesity, pituitary, adrenal and other hormone disorders."
+    ],
+    aliases: [
+      "diabetes doctor in Coimbatore",
+      "diabetologist in Coimbatore",
+      "sugar doctor in Coimbatore",
+      "sugar specialist in Coimbatore",
+      "diabetes doctor at KMCH Coimbatore"
+    ],
+    whenToConsult: [
+      "Newly detected high fasting glucose, post-meal glucose or HbA1c",
+      "Blood sugar that remains above target despite current treatment",
+      "Repeated low blood sugar, insulin questions or glucose variability",
+      "Diabetes during pregnancy or diabetes diagnosed at a young age",
+      "Possible kidney, eye, nerve, foot or cardiovascular complications"
+    ],
+    approach: [
+      "Clarify the type of diabetes and individual treatment targets",
+      "Review glucose records, medicines, nutrition, activity and hypoglycemia risk",
+      "Assess complication screening and relevant cardiovascular or kidney risk",
+      "Create a follow-up plan that may include tablets, injections, insulin or glucose-monitoring technology"
+    ],
+    faqs: [
+      {
+        q: "What is the difference between a diabetologist and an endocrinologist?",
+        a: "Both may treat diabetes. An endocrinologist has specialist training across diabetes and the wider hormone system, including thyroid, adrenal, pituitary, reproductive and metabolic disorders."
+      },
+      {
+        q: "Is a sugar specialist the same as a diabetes specialist?",
+        a: "Yes. “Sugar doctor” and “sugar specialist” are common informal search terms for a doctor who evaluates and treats diabetes and high blood glucose."
+      },
+      {
+        q: "When should I see a diabetes specialist?",
+        a: "Consider specialist review for uncertain diabetes type, difficult glucose control, repeated low glucose, pregnancy, insulin management, young-onset diabetes or possible complications. Urgent symptoms require prompt medical care."
+      },
+      {
+        q: "Where can I consult a diabetes specialist at KMCH Coimbatore?",
+        a: "Dr. Durairaj Arjunan consults at KMCH Main Center, 99 Avanashi Road, Coimbatore. Call +91 90412 50378 for current appointment availability."
+      }
+    ],
     items: [
-      "Diabetes Reversal",
+      "Diabetes remission assessment and support",
       "Type 1 Diabetes",
       "Type 2 Diabetes",
       "Gestational Diabetes",
@@ -60,12 +146,39 @@ const carePages = [
   },
   {
     slug: "adrenal-parathyroid-disorders-coimbatore",
+    navTitle: "Adrenal & Parathyroid",
     eyebrow: "Care Area",
     title: "Adrenal and Parathyroid Disorders",
     pageTitle: "Adrenal and Parathyroid Disorders in Coimbatore",
+    seoTitle: "Adrenal & Parathyroid Specialist Coimbatore | Dr Arjunan",
     label: "Cortisol, aldosterone, endocrine hypertension, calcium and parathyroid care",
     meta:
-      "Adrenal and parathyroid care-area page for Dr. Durairaj Arjunan, consultant endocrinologist at KMCH, Coimbatore.",
+      "Consult an endocrinologist at KMCH Coimbatore for adrenal, cortisol, endocrine hypertension, calcium and parathyroid disorder evaluation.",
+    intro: [
+      "Adrenal and parathyroid disorders can affect blood pressure, potassium, cortisol, calcium and bone health. Dr. Durairaj Arjunan evaluates suspected endocrine hypertension, cortisol disorders, adrenal masses and parathyroid conditions at KMCH, Coimbatore."
+    ],
+    aliases: ["adrenal specialist in Coimbatore", "parathyroid specialist in Coimbatore", "hormone doctor in Coimbatore"],
+    whenToConsult: [
+      "Difficult-to-control blood pressure, especially with low potassium",
+      "An adrenal nodule or mass found on imaging",
+      "Unexplained high or low calcium",
+      "Clinical concern for cortisol, aldosterone or parathyroid hormone excess or deficiency"
+    ],
+    approach: [
+      "Review symptoms, medicines, imaging and prior hormone tests",
+      "Plan confirmatory biochemical testing when clinically indicated",
+      "Coordinate imaging, genetic evaluation or surgical opinion when appropriate"
+    ],
+    faqs: [
+      {
+        q: "Which doctor treats adrenal and parathyroid disorders?",
+        a: "An endocrinologist evaluates hormone conditions involving the adrenal and parathyroid glands and coordinates additional imaging or surgical care when needed."
+      },
+      {
+        q: "Can hormone disorders cause high blood pressure?",
+        a: "Yes. Conditions involving aldosterone, cortisol or catecholamines can cause endocrine hypertension in some people. Testing should be guided by a clinical assessment."
+      }
+    ],
     groups: [
       {
         title: "Adrenal Disorders",
@@ -85,22 +198,91 @@ const carePages = [
   },
   {
     slug: "thyroid-specialist-coimbatore",
+    navTitle: "Thyroid",
     eyebrow: "Care Area",
     title: "Thyroid Disorders",
-    pageTitle: "Thyroid Disorders in Coimbatore",
-    label: "Hyperthyroidism, hypothyroidism, nodules and cancers",
+    pageTitle: "Thyroid Specialist and Thyroid Doctor in Coimbatore",
+    seoTitle: "Thyroid Specialist in Coimbatore | Dr Durairaj Arjunan",
+    label: "Endocrinology care for hypothyroidism, hyperthyroidism, thyroid nodules and thyroid cancer evaluation",
     meta:
-      "Thyroid disorders care-area page for Dr. Durairaj Arjunan, consultant endocrinologist at KMCH, Coimbatore.",
-    items: ["Hyper & Hypo Thyroidism", "Thyroid Nodules", "Thyroid Cancers"]
+      "Consult a thyroid specialist and endocrinologist at KMCH Coimbatore for hypothyroidism, hyperthyroidism, thyroid nodules and thyroid cancer evaluation.",
+    intro: [
+      "Dr. Durairaj Arjunan is a consultant endocrinologist at KMCH, Coimbatore, providing specialist evaluation for underactive and overactive thyroid, thyroid nodules, goitre and thyroid cancer-related endocrine care. Assessment is based on symptoms, examination, thyroid-function results and imaging when needed.",
+      "Patients often search for a thyroid doctor, thyroid specialist, hormone doctor or endocrinologist in Coimbatore. Endocrinologists are physicians trained to diagnose and manage thyroid and other hormone disorders; thyroid surgery, when indicated, is performed by an appropriately qualified surgeon."
+    ],
+    aliases: [
+      "thyroid doctor in Coimbatore",
+      "thyroid specialist at KMCH Coimbatore",
+      "endocrinologist for thyroid in Coimbatore",
+      "hormone specialist in Coimbatore"
+    ],
+    whenToConsult: [
+      "Abnormal TSH, T4 or T3 results",
+      "Persistent symptoms with known hypothyroidism or hyperthyroidism",
+      "A thyroid swelling, goitre or nodule",
+      "Thyroid concerns during pregnancy or while planning pregnancy",
+      "A second opinion about thyroid cancer-related hormone management"
+    ],
+    approach: [
+      "Review symptoms, medicines, prior laboratory results and ultrasound findings",
+      "Interpret thyroid tests in the context of age, pregnancy and other health conditions",
+      "Plan additional antibody tests, ultrasound or needle sampling only when indicated",
+      "Coordinate nuclear medicine or surgical review when appropriate"
+    ],
+    faqs: [
+      {
+        q: "Which doctor should I consult for thyroid problems?",
+        a: "An endocrinologist is a hormone specialist who treats hypothyroidism, hyperthyroidism and many thyroid-nodule concerns. A surgeon or nuclear-medicine specialist may also be involved when clinically indicated."
+      },
+      {
+        q: "Does every thyroid nodule need surgery?",
+        a: "No. Evaluation usually considers ultrasound features, size, symptoms and sometimes needle-sampling results. Many nodules can be monitored, while others need additional treatment."
+      },
+      {
+        q: "Can a thyroid disorder cause weight change?",
+        a: "Both underactive and overactive thyroid can affect weight, but weight change has many possible causes. Thyroid tests and a clinical assessment help determine whether thyroid disease is contributing."
+      },
+      {
+        q: "Where can I consult a thyroid specialist at KMCH Coimbatore?",
+        a: "Dr. Durairaj Arjunan consults at KMCH Main Center, 99 Avanashi Road, Coimbatore. Call +91 90412 50378 for current appointment availability."
+      }
+    ],
+    items: ["Hypothyroidism", "Hyperthyroidism", "Graves' disease", "Thyroid Nodules", "Goitre", "Thyroid Cancers"]
   },
   {
     slug: "pcos-pcod-pmos-endocrinologist-coimbatore",
+    navTitle: "PCOS & Gonadal",
     eyebrow: "Care Area",
     title: "Testicular and Ovarian Disorders",
     pageTitle: "PCOS, PCOD, PMOS, Testicular and Ovarian Disorders in Coimbatore",
+    seoTitle: "PCOS Specialist in Coimbatore | Dr Durairaj Arjunan",
     label: "PCOS/PCOD/PMOS and gonadal endocrine care",
     meta:
-      "Testicular and ovarian disorders care-area page for Dr. Durairaj Arjunan, consultant endocrinologist at KMCH, Coimbatore.",
+      "Consult a PCOS and hormone specialist at KMCH Coimbatore for PCOS/PCOD, insulin resistance and testicular or ovarian endocrine disorders.",
+    intro: [
+      "PCOS is a common hormone and metabolic condition that may involve irregular periods, excess androgen symptoms, insulin resistance, weight concerns and fertility questions. Endocrinology review can help assess the metabolic and hormonal picture alongside gynecology care when needed."
+    ],
+    aliases: ["PCOS specialist in Coimbatore", "PCOD doctor in Coimbatore", "hormone doctor for PCOS in Coimbatore"],
+    whenToConsult: [
+      "Irregular periods with acne, excess facial hair or weight concerns",
+      "Possible insulin resistance, prediabetes or diabetes with PCOS",
+      "Questions about a testicular, ovarian or sex-hormone disorder"
+    ],
+    approach: [
+      "Clinical review and targeted hormone or metabolic tests when indicated",
+      "Individualized discussion of lifestyle, medicines and long-term metabolic risk",
+      "Coordination with gynecology, fertility or other specialists when appropriate"
+    ],
+    faqs: [
+      {
+        q: "Can an endocrinologist treat PCOS or PCOD?",
+        a: "Yes. An endocrinologist can evaluate hormonal and metabolic aspects of PCOS, including androgen symptoms, insulin resistance and diabetes risk, and coordinate gynecology care when needed."
+      },
+      {
+        q: "Are PCOS and PCOD the same?",
+        a: "PCOS is the standard medical term. PCOD is commonly used in everyday conversation for a similar group of symptoms, but a clinician should confirm the diagnosis and exclude other causes."
+      }
+    ],
     items: [
       "Polycystic Ovarian Syndrome (PCOS/PCOD/PMOS)",
       "Testicular and ovarian endocrine disorders"
@@ -108,12 +290,38 @@ const carePages = [
   },
   {
     slug: "osteoporosis-metabolic-bone-disorders-coimbatore",
+    navTitle: "Bone Health",
     eyebrow: "Care Area",
     title: "Metabolic Bone Disorders",
     pageTitle: "Metabolic Bone Disorders in Coimbatore",
+    seoTitle: "Osteoporosis Specialist in Coimbatore | Dr Durairaj Arjunan",
     label: "Bone metabolism, osteoporosis and osteomalacia",
     meta:
-      "Metabolic bone disorders care-area page for Dr. Durairaj Arjunan, consultant endocrinologist at KMCH, Coimbatore.",
+      "Consult an osteoporosis and metabolic bone specialist at KMCH Coimbatore for fragility fractures, secondary osteoporosis and osteomalacia.",
+    intro: [
+      "Metabolic bone care includes osteoporosis and bone disease caused by hormones, medicines or mineral disorders. Dr. Durairaj Arjunan's academic work includes bone microarchitecture and osteoporosis across endocrine conditions."
+    ],
+    aliases: ["osteoporosis specialist in Coimbatore", "metabolic bone specialist in Coimbatore", "bone hormone doctor in Coimbatore"],
+    whenToConsult: [
+      "A fragility fracture or unexpectedly low bone density",
+      "Osteoporosis related to menopause, steroids or an endocrine disorder",
+      "Possible rickets, osteomalacia or abnormal calcium and phosphate results"
+    ],
+    approach: [
+      "Review fracture history, medicines, diet, risk factors and bone-density results",
+      "Assess secondary endocrine or metabolic causes when indicated",
+      "Discuss individualized fracture-prevention and treatment options"
+    ],
+    faqs: [
+      {
+        q: "Which doctor treats osteoporosis caused by hormone problems?",
+        a: "An endocrinologist can evaluate osteoporosis and metabolic bone disease, particularly when thyroid, parathyroid, adrenal, gonadal or medicine-related causes are possible."
+      },
+      {
+        q: "Who should be evaluated after a fragility fracture?",
+        a: "Adults with a fracture after a low-impact fall or minor injury may benefit from osteoporosis assessment. The timing and tests depend on age, fracture type and other risk factors."
+      }
+    ],
     items: [
       "Post-menopausal Osteoporosis",
       "Glucocorticoid-induced Osteoporosis",
@@ -126,9 +334,11 @@ const carePages = [
 
 const publicationPage = {
   slug: "publications",
+  navTitle: "Publications",
   eyebrow: "Research",
   title: "Publications, Academic Work, and Presentations",
   pageTitle: "Publications, Academic Work, and Presentations",
+  seoTitle: "Dr Durairaj Arjunan Publications | Endocrinology Research",
   label: "Research spans diabetes, metabolic bone disease, thyroid and adrenal disease, endocrine oncology, and rare endocrine presentations.",
   meta:
     "Research and publications page for Dr. Durairaj Arjunan, consultant endocrinologist at KMCH, Coimbatore.",
@@ -162,14 +372,24 @@ function renderPageNav(activeSlug) {
   return pages
     .map((page) => {
       const current = page.slug === activeSlug ? ' aria-current="page"' : "";
-      return `<a href="../${page.slug}/"${current}>${escapeHtml(page.title)}</a>`;
+      return `<a href="../${page.slug}/"${current}>${escapeHtml(page.navTitle || page.title)}</a>`;
     })
     .join("\n");
 }
 
 function renderContent(page) {
+  const intro = page.intro
+    ? `<article class="service-introduction">
+        <p class="eyebrow">Specialist Care at KMCH Coimbatore</p>
+        ${page.intro.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("\n")}
+        <p class="search-language"><strong>Related patient searches:</strong> ${page.aliases
+          .map((alias) => escapeHtml(alias))
+          .join(" · ")}</p>
+      </article>`
+    : "";
+
   if (page.groups) {
-    return page.groups
+    const groups = page.groups
       .map(
         (group) => `
           <article class="info-block">
@@ -180,6 +400,8 @@ function renderContent(page) {
           </article>`
       )
       .join("\n");
+
+    return `${intro}${groups}${renderPatientGuidance(page)}${renderFaqs(page)}`;
   }
 
   const nested = page.nested
@@ -192,21 +414,66 @@ function renderContent(page) {
             </li>`
     : "";
 
-  return `
+  const focusAreas = `
           <article class="info-block">
-            <h2>${escapeHtml(page.title)}</h2>
+            <h2>Conditions and care areas</h2>
             <ul class="clean-list nested-clean-list">
               ${renderList(page.items)}
               ${nested}
             </ul>
           </article>`;
+
+  return `${intro}${focusAreas}${renderPatientGuidance(page)}${renderFaqs(page)}`;
+}
+
+function renderPatientGuidance(page) {
+  if (!page.whenToConsult || !page.approach) {
+    return "";
+  }
+
+  return `
+          <article class="info-block">
+            <h2>When to consult</h2>
+            <ul class="clean-list">
+              ${renderList(page.whenToConsult)}
+            </ul>
+          </article>
+          <article class="info-block">
+            <h2>What specialist review may include</h2>
+            <ul class="clean-list">
+              ${renderList(page.approach)}
+            </ul>
+          </article>`;
+}
+
+function renderFaqs(page) {
+  if (!page.faqs?.length) {
+    return "";
+  }
+
+  return `
+          <section class="faq-section" aria-labelledby="faq-heading">
+            <p class="eyebrow">Patient Questions</p>
+            <h2 id="faq-heading">Frequently asked questions</h2>
+            <div class="faq-list">
+              ${page.faqs
+                .map(
+                  (faq) => `<details class="faq-item">
+                <summary>${escapeHtml(faq.q)}</summary>
+                <p>${escapeHtml(faq.a)}</p>
+              </details>`
+                )
+                .join("\n")}
+            </div>
+            <p class="medical-note">This page provides general information and does not replace an individual medical consultation. Seek urgent medical care for severe or rapidly worsening symptoms.</p>
+          </section>`;
 }
 
 function renderJsonLd(page) {
   const url = `${site.origin}/${page.slug}/`;
   const graph = [
     {
-      "@type": "WebPage",
+      "@type": page.faqs ? "MedicalWebPage" : "WebPage",
       "@id": `${url}#webpage`,
       url,
       name: page.pageTitle,
@@ -216,7 +483,8 @@ function renderJsonLd(page) {
       about: { "@id": `${site.origin}/#doctor` },
       primaryImageOfPage: { "@id": `${site.origin}/#photo` },
       breadcrumb: { "@id": `${url}#breadcrumb` },
-      inLanguage: "en-IN"
+      inLanguage: "en-IN",
+      ...(page.faqs ? { mainEntity: { "@id": `${url}#faq` } } : {})
     },
     {
       "@type": "BreadcrumbList",
@@ -235,6 +503,61 @@ function renderJsonLd(page) {
           item: url
         }
       ]
+    },
+    ...(page.faqs
+      ? [
+          {
+            "@type": "FAQPage",
+            "@id": `${url}#faq`,
+            mainEntity: page.faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.q,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.a
+              }
+            }))
+          }
+        ]
+      : []),
+    {
+      "@type": "Physician",
+      "@id": `${site.origin}/#doctor`,
+      name: site.name,
+      url: `${site.origin}/`,
+      image: { "@id": `${site.origin}/#photo` },
+      description: "Consultant endocrinologist at KMCH, Coimbatore, with MD Internal Medicine and DM Endocrinology training from PGIMER, Chandigarh.",
+      telephone: "+919041250378",
+      medicalSpecialty: "Endocrinology",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Kovai Medical Center and Hospital, 99, Avanashi Road",
+        addressLocality: "Coimbatore",
+        postalCode: "641014",
+        addressRegion: "Tamil Nadu",
+        addressCountry: "IN"
+      },
+      areaServed: { "@type": "City", name: "Coimbatore" },
+      hasMap: site.mapHref,
+      sameAs: [
+        "https://www.linkedin.com/in/durairaj-arjunan-57b074155/",
+        "https://scholar.google.com/citations?hl=en&user=qjhnmsIAAAAJ&view_op=list_works",
+        "https://www.docindia.org/doctors/coimbatore/dr-durairaj-arjunan-endocrinology",
+        "https://www.researchgate.net/profile/Durairaj-Arjunan"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${site.origin}/#website`,
+      url: `${site.origin}/`,
+      name: site.name,
+      inLanguage: "en-IN"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": `${site.origin}/#photo`,
+      url: site.image,
+      caption: "Dr. Durairaj Arjunan, consultant endocrinologist at KMCH, Coimbatore"
     }
   ];
 
@@ -243,29 +566,32 @@ function renderJsonLd(page) {
 
 function renderPage(page) {
   const url = `${site.origin}/${page.slug}/`;
+  const seoTitle = page.seoTitle || `${page.pageTitle} | Dr. Durairaj Arjunan`;
 
   return `<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>${escapeHtml(page.pageTitle)} | Dr. Durairaj Arjunan</title>
+    <title>${escapeHtml(seoTitle)}</title>
     <meta name="description" content="${escapeHtml(page.meta)}" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="${url}" />
-    <meta property="og:title" content="${escapeHtml(page.pageTitle)} | Dr. Durairaj Arjunan" />
+    <meta property="og:title" content="${escapeHtml(seoTitle)}" />
     <meta property="og:description" content="${escapeHtml(page.meta)}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="${url}" />
     <meta property="og:site_name" content="${escapeHtml(site.name)}" />
     <meta property="og:locale" content="en_IN" />
     <meta property="og:image" content="${site.image}" />
+    <meta property="og:image:alt" content="Dr. Durairaj Arjunan, endocrinologist at KMCH Coimbatore" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="${escapeHtml(page.pageTitle)} | Dr. Durairaj Arjunan" />
+    <meta name="twitter:title" content="${escapeHtml(seoTitle)}" />
+    <meta name="twitter:image:alt" content="Dr. Durairaj Arjunan, endocrinologist at KMCH Coimbatore" />
     <meta name="twitter:description" content="${escapeHtml(page.meta)}" />
     <meta name="twitter:image" content="${site.image}" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../assets/styles.css?v=20260706-seo-pages" />
+    <link rel="stylesheet" href="../assets/styles.css?v=20260815-seo-pages" />
     <script type="application/ld+json">
       ${renderJsonLd(page)}
     </script>
@@ -350,6 +676,9 @@ function renderPage(page) {
         </span>
       </div>
     </footer>
+    <div class="mobile-action">
+      <a class="button button-primary full-width" href="${site.phoneHref}">Call for an Appointment</a>
+    </div>
   </body>
 </html>
 `;
@@ -376,7 +705,15 @@ ${pages.map((page) => `- ${page.pageTitle}: ${site.origin}/${page.slug}/`).join(
 
 ## Page Scope
 
-The subpages organize content already present on the main profile page.
+The website provides factual, patient-oriented information about Dr. Durairaj
+Arjunan's endocrinology practice. Common patient terms include endocrinologist,
+hormone specialist, diabetes specialist, diabetologist, sugar doctor, thyroid
+specialist, obesity specialist, weight loss doctor, PCOS specialist, and
+osteoporosis specialist in Coimbatore. These terms describe related clinical
+search intent and are not claims of ranking or superiority.
+
+The medical pages are general information, not individualized diagnosis or
+emergency advice. Appointment availability should be confirmed by phone.
 `;
 
 writeFileSync(join(process.cwd(), "llms.txt"), llms);

@@ -443,6 +443,47 @@ h3 {
   font-size: clamp(2.1rem, 3vw, 3rem);
 }
 
+.care-introduction {
+  margin-top: 16px;
+}
+
+.care-page-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.care-page-links a,
+.care-detail-link {
+  color: var(--teal);
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.care-page-links a {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  padding: 8px 14px;
+  background: var(--mint);
+  border: 1px solid #cbe0db;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.care-page-links a:hover {
+  border-color: var(--teal);
+}
+
+.care-detail-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 0.92rem;
+}
+
 .care-accordion {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1063,11 +1104,101 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
+  align-items: start;
 }
 
 .service-content-grid .info-block h2 {
   margin-bottom: 16px;
   font-size: 1.55rem;
+}
+
+.service-introduction,
+.faq-section {
+  grid-column: 1 / -1;
+}
+
+.service-introduction {
+  max-width: 920px;
+  padding: 8px 0 12px;
+}
+
+.service-introduction > p:not(.eyebrow) {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 1.06rem;
+  line-height: 1.7;
+}
+
+.service-introduction .search-language {
+  padding: 14px 16px;
+  color: #49625d;
+  background: var(--mint);
+  border-left: 4px solid var(--gold);
+  border-radius: 4px;
+  font-size: 0.92rem;
+}
+
+.faq-section {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.faq-section > h2 {
+  margin-bottom: 20px;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+}
+
+.faq-list {
+  display: grid;
+  gap: 12px;
+}
+
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(18, 60, 57, 0.06);
+}
+
+.faq-item summary {
+  position: relative;
+  cursor: pointer;
+  padding: 18px 54px 18px 20px;
+  color: var(--teal-dark);
+  font-weight: 850;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  color: var(--teal);
+  font-size: 1.25rem;
+  transform: translateY(-50%);
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-item p {
+  margin: 0;
+  padding: 0 20px 20px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.medical-note {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
 }
 
 .publication-list {
@@ -1368,14 +1499,14 @@ th {
   .hero-copy,
   .credential-line,
   .lead {
-    width: calc(100vw - 28px);
-    max-width: calc(100vw - 28px);
+    width: 100%;
+    max-width: 100%;
     white-space: normal;
     overflow-wrap: anywhere;
   }
 
   h1 {
-    max-width: calc(100vw - 28px);
+    max-width: 100%;
     font-size: 2.72rem;
   }
 
@@ -1456,7 +1587,7 @@ th {
   }
 
   .service-page h1 {
-    max-width: calc(100vw - 28px);
+    max-width: 100%;
     font-size: 2.42rem;
   }
 
