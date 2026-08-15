@@ -6,7 +6,8 @@ const site = {
   name: "Dr. Durairaj Arjunan",
   phone: "+91 90412 50378",
   phoneHref: "tel:+919041250378",
-  whatsappHref: "https://wa.me/919041250378?text=schedule%20appointment",
+  whatsappHref:
+    "https://wa.me/919041250378?text=Hello%2C%20I%20would%20like%20to%20check%20appointment%20availability%20with%20Dr.%20Durairaj%20Arjunan%20at%20KMCH.",
   emailHref: "mailto:duraipgi@gmail.com",
   mapHref: "https://maps.app.goo.gl/kianTCpHuHG1sExS7",
   image: "https://drdurairajarjunan.com/assets/durairaj-photo.jpg",
@@ -64,6 +65,13 @@ const carePages = [
         a: "Dr. Durairaj Arjunan consults at KMCH Main Center, 99 Avanashi Road, Coimbatore. Call +91 90412 50378 for current appointment availability."
       }
     ],
+    sources: [
+      {
+        title: "Treatment for Overweight and Obesity",
+        publisher: "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)",
+        url: "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/treatment"
+      }
+    ],
     items: [
       "Lifestyle medicine",
       "Personalized Diet and Medical Nutrition Therapy",
@@ -82,23 +90,28 @@ const carePages = [
   },
   {
     slug: "diabetes-specialist-coimbatore",
+    priority: 1,
     navTitle: "Diabetes",
     eyebrow: "Care Area",
     title: "Diabetes",
     pageTitle: "Diabetes Specialist and Diabetologist in Coimbatore",
     seoTitle: "Diabetes Specialist in Coimbatore | Dr Durairaj Arjunan",
-    label: "Specialist evaluation and ongoing care for type 1, type 2, gestational and complex diabetes",
+    label: "Diabetes specialist care for blood sugar, HbA1c, insulin, type 1, type 2, gestational and complex diabetes",
     meta:
       "Consult Dr. Durairaj Arjunan, diabetes specialist and endocrinologist at KMCH Coimbatore, for type 1, type 2, gestational and complex diabetes.",
     intro: [
       "Dr. Durairaj Arjunan is a consultant endocrinologist and diabetes specialist at KMCH, Coimbatore. His diabetes practice includes type 1 and type 2 diabetes, diabetes in pregnancy, young-onset diabetes and less common forms such as MODY, LADA, mitochondrial diabetes and lipodystrophy.",
-      "In everyday language, patients may use diabetes doctor, diabetologist, sugar doctor or sugar specialist for a clinician who manages high blood glucose. An endocrinologist has specialist training in diabetes as well as thyroid, obesity, pituitary, adrenal and other hormone disorders."
+      "Diabetes care may include reviewing fasting and post-meal glucose, HbA1c, medicines, insulin, low-glucose episodes, continuous glucose monitoring and risk factors for kidney, eye, nerve, foot and cardiovascular complications.",
+      "Patients may search for a diabetes doctor, diabetic doctor, diabetologist, sugar doctor or sugar specialist. These terms commonly describe a clinician who manages diabetes and high blood glucose; an endocrinologist also has specialist training across the wider hormone system."
     ],
     aliases: [
       "diabetes doctor in Coimbatore",
+      "diabetes specialist doctor in Coimbatore",
+      "diabetic doctor in Coimbatore",
       "diabetologist in Coimbatore",
       "sugar doctor in Coimbatore",
       "sugar specialist in Coimbatore",
+      "diabetes doctor near me",
       "diabetes doctor at KMCH Coimbatore"
     ],
     whenToConsult: [
@@ -114,6 +127,13 @@ const carePages = [
       "Assess complication screening and relevant cardiovascular or kidney risk",
       "Create a follow-up plan that may include tablets, injections, insulin or glucose-monitoring technology"
     ],
+    preparation: [
+      "Recent fasting glucose, post-meal glucose, HbA1c, kidney, lipid and other available blood-test reports",
+      "Current prescriptions, insulin names and doses, and any medicines or supplements taken",
+      "Glucometer readings, glucose diary or continuous glucose-monitoring reports when available",
+      "Notes about low-glucose episodes, symptoms, meal timing and previous hospital treatment",
+      "Eye, kidney, nerve, foot, pregnancy or cardiovascular reports relevant to diabetes care"
+    ],
     faqs: [
       {
         q: "What is the difference between a diabetologist and an endocrinologist?",
@@ -128,8 +148,33 @@ const carePages = [
         a: "Consider specialist review for uncertain diabetes type, difficult glucose control, repeated low glucose, pregnancy, insulin management, young-onset diabetes or possible complications. Urgent symptoms require prompt medical care."
       },
       {
+        q: "What should I bring to a diabetes consultation?",
+        a: "Bring recent glucose and HbA1c reports, your prescription and insulin list, glucometer or continuous glucose-monitoring records, and relevant eye, kidney, nerve, foot, pregnancy or cardiovascular reports. Do not change treatment or fast unless the clinic has instructed you to do so."
+      },
+      {
+        q: "Can an endocrinologist review insulin and continuous glucose monitoring?",
+        a: "Yes. A diabetes consultation may include review of insulin timing and doses, glucose patterns, low-glucose risk and data from a glucometer or continuous glucose monitor when available. Any treatment change must be individualized during a clinical consultation."
+      },
+      {
         q: "Where can I consult a diabetes specialist at KMCH Coimbatore?",
         a: "Dr. Durairaj Arjunan consults at KMCH Main Center, 99 Avanashi Road, Coimbatore. Call +91 90412 50378 for current appointment availability."
+      }
+    ],
+    sources: [
+      {
+        title: "Diabetes Overview",
+        publisher: "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)",
+        url: "https://www.niddk.nih.gov/health-information/diabetes/overview"
+      },
+      {
+        title: "Public Awareness Leaflets",
+        publisher: "Research Society for the Study of Diabetes in India (RSSDI)",
+        url: "https://www.rssdi.in/newwebsite/public-awareness-leaflets.php"
+      },
+      {
+        title: "Standards of Care in Diabetes—2026",
+        publisher: "American Diabetes Association",
+        url: "https://professional.diabetes.org/standards-of-care"
       }
     ],
     items: [
@@ -177,6 +222,18 @@ const carePages = [
       {
         q: "Can hormone disorders cause high blood pressure?",
         a: "Yes. Conditions involving aldosterone, cortisol or catecholamines can cause endocrine hypertension in some people. Testing should be guided by a clinical assessment."
+      }
+    ],
+    sources: [
+      {
+        title: "Adrenal Insufficiency and Addison's Disease",
+        publisher: "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)",
+        url: "https://www.niddk.nih.gov/health-information/endocrine-diseases/adrenal-insufficiency-addisons-disease/definition-facts"
+      },
+      {
+        title: "Primary Hyperparathyroidism",
+        publisher: "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)",
+        url: "https://www.niddk.nih.gov/health-information/endocrine-diseases/primary-hyperparathyroidism"
       }
     ],
     groups: [
@@ -247,6 +304,18 @@ const carePages = [
         a: "Dr. Durairaj Arjunan consults at KMCH Main Center, 99 Avanashi Road, Coimbatore. Call +91 90412 50378 for current appointment availability."
       }
     ],
+    sources: [
+      {
+        title: "Hypothyroidism (Underactive Thyroid)",
+        publisher: "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)",
+        url: "https://www.niddk.nih.gov/health-information/endocrine-diseases/hypothyroidism"
+      },
+      {
+        title: "Thyroid Nodules",
+        publisher: "American Thyroid Association",
+        url: "https://www.thyroid.org/thyroid-nodules/"
+      }
+    ],
     items: ["Hypothyroidism", "Hyperthyroidism", "Graves' disease", "Thyroid Nodules", "Goitre", "Thyroid Cancers"]
   },
   {
@@ -281,6 +350,13 @@ const carePages = [
       {
         q: "Are PCOS and PCOD the same?",
         a: "PCOS is the standard medical term. PCOD is commonly used in everyday conversation for a similar group of symptoms, but a clinician should confirm the diagnosis and exclude other causes."
+      }
+    ],
+    sources: [
+      {
+        title: "Polycystic Ovary Syndrome",
+        publisher: "World Health Organization",
+        url: "https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome"
       }
     ],
     items: [
@@ -322,6 +398,13 @@ const carePages = [
         a: "Adults with a fracture after a low-impact fall or minor injury may benefit from osteoporosis assessment. The timing and tests depend on age, fracture type and other risk factors."
       }
     ],
+    sources: [
+      {
+        title: "Bone Health and Osteoporosis",
+        publisher: "National Institute of Arthritis and Musculoskeletal and Skin Diseases (NIAMS)",
+        url: "https://www.niams.nih.gov/health-topics/bone-health-and-osteoporosis"
+      }
+    ],
     items: [
       "Post-menopausal Osteoporosis",
       "Glucocorticoid-induced Osteoporosis",
@@ -354,7 +437,10 @@ const publicationPage = {
   ]
 };
 
-const pages = [...carePages, publicationPage];
+const pages = [
+  ...[...carePages].sort((a, b) => (b.priority || 0) - (a.priority || 0)),
+  publicationPage
+];
 
 function escapeHtml(value) {
   return String(value)
@@ -401,7 +487,7 @@ function renderContent(page) {
       )
       .join("\n");
 
-    return `${intro}${groups}${renderPatientGuidance(page)}${renderFaqs(page)}`;
+    return `${intro}${groups}${renderPatientGuidance(page)}${renderPreparation(page)}${renderFaqs(page)}${renderSources(page)}`;
   }
 
   const nested = page.nested
@@ -423,7 +509,7 @@ function renderContent(page) {
             </ul>
           </article>`;
 
-  return `${intro}${focusAreas}${renderPatientGuidance(page)}${renderFaqs(page)}`;
+  return `${intro}${focusAreas}${renderPatientGuidance(page)}${renderPreparation(page)}${renderFaqs(page)}${renderSources(page)}`;
 }
 
 function renderPatientGuidance(page) {
@@ -442,6 +528,20 @@ function renderPatientGuidance(page) {
             <h2>What specialist review may include</h2>
             <ul class="clean-list">
               ${renderList(page.approach)}
+            </ul>
+          </article>`;
+}
+
+function renderPreparation(page) {
+  if (!page.preparation?.length) {
+    return "";
+  }
+
+  return `
+          <article class="info-block diabetes-preparation">
+            <h2>What to bring to a diabetes consultation</h2>
+            <ul class="clean-list">
+              ${renderList(page.preparation)}
             </ul>
           </article>`;
 }
@@ -469,6 +569,63 @@ function renderFaqs(page) {
           </section>`;
 }
 
+function renderSources(page) {
+  if (!page.sources?.length) {
+    return "";
+  }
+
+  return `
+          <section class="source-section" aria-labelledby="source-heading">
+            <p class="eyebrow">Trusted Sources</p>
+            <h2 id="source-heading">Patient information references</h2>
+            <ul class="source-list">
+              ${page.sources
+                .map(
+                  (source) => `<li>
+                <a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.title)}</a>
+                <span>${escapeHtml(source.publisher)}</span>
+              </li>`
+                )
+                .join("\n")}
+            </ul>
+            <p class="content-note">Clinical profile: Dr. Durairaj Arjunan, MBBS, MD Internal Medicine, DM Endocrinology. Page updated ${site.dateModified}. This general information is not a diagnosis or treatment plan.</p>
+          </section>`;
+}
+
+function renderAppointmentGuide() {
+  return `<section class="appointment-guide" aria-labelledby="prepare-heading">
+        <div class="container">
+          <div class="appointment-guide-heading">
+            <div>
+              <p class="eyebrow">Plan Your Visit</p>
+              <h2 id="prepare-heading">Prepare for your endocrinology appointment</h2>
+            </div>
+            <p>Bringing a concise medical record can make the consultation more useful. Do not stop medicines or fast for tests unless the clinic has specifically instructed you to do so.</p>
+          </div>
+          <div class="appointment-guide-grid">
+            <article>
+              <h3>Bring with you</h3>
+              <ul>
+                <li>Current prescriptions and a complete medicine or supplement list</li>
+                <li>Recent blood-test, scan, biopsy, discharge and referral reports</li>
+                <li>Previous glucose, blood-pressure, weight or symptom records when relevant</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Clinic details</h3>
+              <p><strong>KMCH Main Center</strong><br />99, Avanashi Road, Coimbatore-641014.</p>
+              <p>Tamil, English, Hindi, Punjabi and Bengali consultations are listed on the profile. Call or WhatsApp to confirm current availability.</p>
+            </article>
+          </div>
+          <div class="appointment-guide-actions">
+            <a class="button button-primary" href="${site.phoneHref}" data-conversion="click_call" data-placement="preparation">Call ${site.phone}</a>
+            <a class="button button-whatsapp" href="${site.whatsappHref}" target="_blank" rel="noopener noreferrer" data-conversion="click_whatsapp" data-placement="preparation">WhatsApp for Appointment</a>
+            <a class="button button-secondary" href="${site.mapHref}" target="_blank" rel="noopener noreferrer" data-conversion="click_directions" data-placement="preparation">Open KMCH Map</a>
+          </div>
+        </div>
+      </section>`;
+}
+
 function renderJsonLd(page) {
   const url = `${site.origin}/${page.slug}/`;
   const graph = [
@@ -484,6 +641,7 @@ function renderJsonLd(page) {
       primaryImageOfPage: { "@id": `${site.origin}/#photo` },
       breadcrumb: { "@id": `${url}#breadcrumb` },
       inLanguage: "en-IN",
+      ...(page.sources?.length ? { citation: page.sources.map((source) => source.url) } : {}),
       ...(page.faqs ? { mainEntity: { "@id": `${url}#faq` } } : {})
     },
     {
@@ -591,7 +749,8 @@ function renderPage(page) {
     <meta name="twitter:description" content="${escapeHtml(page.meta)}" />
     <meta name="twitter:image" content="${site.image}" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../assets/styles.css?v=20260815-seo-pages" />
+    <link rel="stylesheet" href="../assets/styles.css?v=20260815-conversion" />
+    <script src="../assets/conversion-events.js?v=20260815" defer></script>
     <script type="application/ld+json">
       ${renderJsonLd(page)}
     </script>
@@ -604,27 +763,27 @@ function renderPage(page) {
       </a>
       <div class="header-actions" aria-label="Contact links">
         <div class="quick-contact-links" aria-label="Contact options">
-          <a class="button button-primary button-compact quick-call-link" href="${site.phoneHref}" aria-label="${site.phone}" title="Call">
+          <a class="button button-primary button-compact quick-call-link" href="${site.phoneHref}" aria-label="${site.phone}" title="Call" data-conversion="click_call" data-placement="header">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <path d="M7.2 4.5 9.8 3.8l1.4 3.7-1.6 1.1c.9 1.8 2.4 3.3 4.2 4.2l1.1-1.6 3.7 1.4-.7 2.6c-.2.7-.9 1.2-1.6 1.1-6.3-.6-11.4-5.7-12-12-.1-.7.4-1.4 1.1-1.6Z" />
             </svg>
             <span>${site.phone}</span>
           </a>
-          <a class="quick-icon-button quick-whatsapp-link" href="${site.whatsappHref}" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp schedule appointment" title="WhatsApp">
+          <a class="quick-icon-button quick-whatsapp-link" href="${site.whatsappHref}" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp to check appointment availability" title="WhatsApp" data-conversion="click_whatsapp" data-placement="header">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <path d="M5.1 19 6.2 15.8A7.7 7.7 0 1 1 9 18.5L5.1 19Z" />
               <path d="M9.4 8.4c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.7 1.6c.1.3.1.5-.1.7l-.5.6c.6 1.1 1.5 2 2.7 2.6l.6-.7c.2-.2.5-.3.8-.1l1.5.7c.3.1.4.3.4.6v.4c0 .5-.2.8-.7 1-1.2.4-3.6-.3-5.5-2.2-1.9-1.9-2.6-4.1-2.2-5.1Z" />
             </svg>
             <span class="visually-hidden">WhatsApp</span>
           </a>
-          <a class="quick-icon-button" href="${site.emailHref}" aria-label="Email" title="Email">
+          <a class="quick-icon-button" href="${site.emailHref}" aria-label="Email" title="Email" data-conversion="click_email" data-placement="header">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <path d="M4 6.5h16v11H4v-11Z" />
               <path d="m5.5 8 6.5 4.6L18.5 8" />
             </svg>
             <span class="visually-hidden">Email</span>
           </a>
-          <a class="quick-icon-button" href="${site.mapHref}" target="_blank" rel="noopener noreferrer" aria-label="Open map" title="Map">
+          <a class="quick-icon-button" href="${site.mapHref}" target="_blank" rel="noopener noreferrer" aria-label="Open map" title="Map" data-conversion="click_directions" data-placement="header">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <path d="M12 21s6-5.2 6-11a6 6 0 0 0-12 0c0 5.8 6 11 6 11Z" />
               <circle cx="12" cy="10" r="2.1" />
@@ -644,14 +803,19 @@ function renderPage(page) {
             <p class="lead">${escapeHtml(page.label)}</p>
             <div class="actions">
               <a class="button button-primary" href="../">Back to Main Profile</a>
-              <a class="button button-secondary" href="${site.phoneHref}">Call for an Appointment</a>
+              <a class="button button-secondary" href="${site.phoneHref}" data-conversion="click_call" data-placement="service_hero">Call for an Appointment</a>
+              <a class="button button-whatsapp" href="${site.whatsappHref}" target="_blank" rel="noopener noreferrer" data-conversion="click_whatsapp" data-placement="service_hero">WhatsApp for Appointment</a>
             </div>
           </div>
           <aside class="service-card">
             <p class="eyebrow">Clinic</p>
             <h2>KMCH Main Center</h2>
             <p>Kovai Medical Center and Hospital, 99, Avanashi Road, Coimbatore-641014.</p>
-            <a class="button button-primary full-width" href="${site.phoneHref}">Call ${site.phone}</a>
+            <p class="service-card-note">Call or WhatsApp to confirm current consultation availability.</p>
+            <div class="service-card-actions">
+              <a class="button button-primary full-width" href="${site.phoneHref}" data-conversion="click_call" data-placement="clinic_card">Call ${site.phone}</a>
+              <a class="button button-whatsapp full-width" href="${site.whatsappHref}" target="_blank" rel="noopener noreferrer" data-conversion="click_whatsapp" data-placement="clinic_card">WhatsApp for Appointment</a>
+            </div>
           </aside>
         </div>
       </section>
@@ -664,6 +828,7 @@ function renderPage(page) {
           ${renderContent(page)}
         </div>
       </section>
+      ${renderAppointmentGuide()}
     </main>
 
     <footer class="footer">
@@ -676,8 +841,9 @@ function renderPage(page) {
         </span>
       </div>
     </footer>
-    <div class="mobile-action">
-      <a class="button button-primary full-width" href="${site.phoneHref}">Call for an Appointment</a>
+    <div class="mobile-action" aria-label="Appointment actions">
+      <a class="button button-primary" href="${site.phoneHref}" data-conversion="click_call" data-placement="mobile_sticky">Call</a>
+      <a class="button button-whatsapp" href="${site.whatsappHref}" target="_blank" rel="noopener noreferrer" data-conversion="click_whatsapp" data-placement="mobile_sticky">WhatsApp</a>
     </div>
   </body>
 </html>
@@ -694,6 +860,8 @@ const llms = `# Dr. Durairaj Arjunan
 
 Website: ${site.origin}/
 Primary profile: Consultant Endocrinologist at KMCH, Coimbatore.
+Featured clinical focus: Diabetes care, including type 1, type 2, gestational,
+young-onset and complex diabetes.
 Appointment phone: ${site.phone}
 Email: duraipgi@gmail.com
 Location: KMCH Main Center, Avanashi Road, Coimbatore-641014, India.
@@ -706,9 +874,10 @@ ${pages.map((page) => `- ${page.pageTitle}: ${site.origin}/${page.slug}/`).join(
 ## Page Scope
 
 The website provides factual, patient-oriented information about Dr. Durairaj
-Arjunan's endocrinology practice. Common patient terms include endocrinologist,
-hormone specialist, diabetes specialist, diabetologist, sugar doctor, thyroid
-specialist, obesity specialist, weight loss doctor, PCOS specialist, and
+Arjunan's endocrinology practice. Diabetes is the featured care area. Common
+patient terms include endocrinologist, hormone specialist, diabetes specialist,
+diabetes doctor, diabetic doctor, diabetologist, sugar doctor, sugar specialist,
+thyroid specialist, obesity specialist, weight loss doctor, PCOS specialist, and
 osteoporosis specialist in Coimbatore. These terms describe related clinical
 search intent and are not claims of ranking or superiority.
 
@@ -720,7 +889,10 @@ writeFileSync(join(process.cwd(), "llms.txt"), llms);
 
 const sitemapUrls = [
   ["", "1.0"],
-  ...pages.map((page) => [`${page.slug}/`, page.slug === "publications" ? "0.7" : "0.8"])
+  ...pages.map((page) => [
+    `${page.slug}/`,
+    page.slug === "diabetes-specialist-coimbatore" ? "0.9" : page.slug === "publications" ? "0.7" : "0.8"
+  ])
 ];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

@@ -31,7 +31,8 @@
     <meta name="twitter:image" content="https://drdurairajarjunan.com/assets/durairaj-photo.jpg" />
     <meta name="twitter:image:alt" content="Dr. Durairaj Arjunan, endocrinologist at KMCH Coimbatore" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/styles.css?v=20260815-local-seo" />
+    <link rel="stylesheet" href="assets/styles.css?v=20260815-conversion" />
+    <script src="assets/conversion-events.js?v=20260815" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -153,17 +154,6 @@
             ],
             "knowsAbout": [
               "Endocrinology",
-              "Obesity and metabolic syndrome",
-              "Weight management",
-              "Lifestyle medicine",
-              "Medical nutrition therapy",
-              "Exercise program",
-              "Fatty liver disorder (MASLD)",
-              "Diabetes remission assessment and support",
-              "Weight reduction therapy",
-              "Semaglutide",
-              "GLP-1 analogs",
-              "Tirzepatide",
               "Diabetes",
               "Diabetology",
               "Diabetes specialist",
@@ -177,6 +167,17 @@
               "LADA",
               "Mitochondrial diabetes",
               "Lipodystrophy",
+              "Obesity and metabolic syndrome",
+              "Weight management",
+              "Lifestyle medicine",
+              "Medical nutrition therapy",
+              "Exercise program",
+              "Fatty liver disorder (MASLD)",
+              "Diabetes remission assessment and support",
+              "Weight reduction therapy",
+              "Semaglutide",
+              "GLP-1 analogs",
+              "Tirzepatide",
               "Adrenal disorders",
               "Cushing Syndrome",
               "Primary hyperaldosteronism",
@@ -228,6 +229,8 @@
             href="tel:+919041250378"
             aria-label="+91 90412 50378"
             title="Call"
+            data-conversion="click_call"
+            data-placement="header"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <path d="M7.2 4.5 9.8 3.8l1.4 3.7-1.6 1.1c.9 1.8 2.4 3.3 4.2 4.2l1.1-1.6 3.7 1.4-.7 2.6c-.2.7-.9 1.2-1.6 1.1-6.3-.6-11.4-5.7-12-12-.1-.7.4-1.4 1.1-1.6Z" />
@@ -236,11 +239,13 @@
           </a>
           <a
             class="quick-icon-button quick-whatsapp-link"
-            href="https://wa.me/919041250378?text=schedule%20appointment"
+            href="https://wa.me/919041250378?text=Hello%2C%20I%20would%20like%20to%20check%20appointment%20availability%20with%20Dr.%20Durairaj%20Arjunan%20at%20KMCH."
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="WhatsApp schedule appointment"
+            aria-label="WhatsApp to check appointment availability"
             title="WhatsApp"
+            data-conversion="click_whatsapp"
+            data-placement="header"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <path d="M5.1 19 6.2 15.8A7.7 7.7 0 1 1 9 18.5L5.1 19Z" />
@@ -248,7 +253,7 @@
             </svg>
             <span class="visually-hidden">WhatsApp</span>
           </a>
-          <a class="quick-icon-button" href="mailto:duraipgi@gmail.com" aria-label="Email" title="Email">
+          <a class="quick-icon-button" href="mailto:duraipgi@gmail.com" aria-label="Email" title="Email" data-conversion="click_email" data-placement="header">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <path d="M4 6.5h16v11H4v-11Z" />
               <path d="m5.5 8 6.5 4.6L18.5 8" />
@@ -257,7 +262,7 @@
             </svg>
             <span class="visually-hidden">Email</span>
           </a>
-          <a class="quick-icon-button" href="https://maps.app.goo.gl/kianTCpHuHG1sExS7" aria-label="Open map" title="Map">
+          <a class="quick-icon-button" href="https://maps.app.goo.gl/kianTCpHuHG1sExS7" target="_blank" rel="noopener noreferrer" aria-label="Open map" title="Map" data-conversion="click_directions" data-placement="header">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <path d="M12 21s6-5.2 6-11a6 6 0 0 0-12 0c0 5.8 6 11 6 11Z" />
               <circle cx="12" cy="10" r="2.1" />
@@ -343,6 +348,7 @@
     <nav class="section-nav" aria-label="Page sections">
       <div class="container section-nav-inner">
         <a href="#about">About</a>
+        <a href="diabetes-specialist-coimbatore/">Diabetes Care</a>
         <a href="#care">Care Areas</a>
         <a href="#credentials">Credentials</a>
         <a href="#research">Research</a>
@@ -384,17 +390,30 @@
             </p>
             <p class="lead">
               Consultant endocrinologist at KMCH, Coimbatore, providing specialist
-              care for obesity and metabolic syndrome, diabetes, thyroid,
+              care for diabetes, obesity and metabolic syndrome, thyroid,
               adrenal, parathyroid, gonadal, and metabolic bone disorders.
             </p>
 
             <div class="actions">
-              <a class="button button-primary" href="tel:+919041250378">Call for an Appointment</a>
+              <a class="button button-primary" href="tel:+919041250378" data-conversion="click_call" data-placement="hero">Call for an Appointment</a>
+              <a
+                class="button button-whatsapp"
+                href="https://wa.me/919041250378?text=Hello%2C%20I%20would%20like%20to%20check%20appointment%20availability%20with%20Dr.%20Durairaj%20Arjunan%20at%20KMCH."
+                target="_blank"
+                rel="noopener noreferrer"
+                data-conversion="click_whatsapp"
+                data-placement="hero"
+              >WhatsApp for Appointment</a>
             </div>
 
+            <a class="hero-priority-link" href="diabetes-specialist-coimbatore/">
+              Explore diabetes specialist and blood sugar care at KMCH
+              <span aria-hidden="true">→</span>
+            </a>
+
             <div class="chips" aria-label="Clinical focus areas">
-              <span>Obesity &amp; Metabolic Syndrome</span>
               <span>Diabetes</span>
+              <span>Obesity &amp; Metabolic Syndrome</span>
               <span>Thyroid Disorders</span>
               <span>Adrenal &amp; Parathyroid</span>
               <span>Gonadal &amp; Metabolic Bone</span>
@@ -424,6 +443,38 @@
         </div>
       </section>
 
+      <section class="diabetes-feature" aria-labelledby="diabetes-feature-heading">
+        <div class="container diabetes-feature-grid">
+          <div>
+            <p class="eyebrow">Featured Care Area</p>
+            <h2 id="diabetes-feature-heading">Diabetes specialist care in Coimbatore</h2>
+            <p>
+              Specialist evaluation and ongoing care for type 1, type 2,
+              gestational, young-onset and complex diabetes—including review of
+              blood sugar, HbA1c, medicines, insulin and glucose-monitoring data.
+            </p>
+            <div class="actions">
+              <a class="button button-primary" href="diabetes-specialist-coimbatore/">View Diabetes Care</a>
+              <a class="button button-secondary" href="tel:+919041250378" data-conversion="click_call" data-placement="diabetes_feature">Call for an Appointment</a>
+            </div>
+          </div>
+          <div class="diabetes-feature-points" aria-label="Diabetes consultation focus">
+            <article>
+              <h3>Blood sugar &amp; HbA1c</h3>
+              <p>New diagnosis, glucose above target or repeated low-glucose episodes.</p>
+            </article>
+            <article>
+              <h3>Insulin &amp; monitoring</h3>
+              <p>Review of medicines, insulin and glucometer or continuous glucose-monitoring patterns.</p>
+            </article>
+            <article>
+              <h3>Special situations</h3>
+              <p>Pregnancy, young-onset diabetes, uncertain diabetes type or possible complications.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="content-band">
         <div class="container two-column">
           <article id="about" class="section-copy profile-summary">
@@ -431,8 +482,8 @@
             <h2>Clinician - Researcher in Diabetes, Obesity, Metabolic Health, and Complex Endocrine Care.</h2>
             <p>
               Dr. Durairaj Arjunan is a consultant endocrinologist at KMCH,
-              Coimbatore, with a broad practice spanning obesity and metabolic
-              syndrome, diabetes, thyroid disorders, adrenal and parathyroid
+              Coimbatore, with a broad practice spanning diabetes, obesity and
+              metabolic syndrome, thyroid disorders, adrenal and parathyroid
               disorders, testicular and ovarian endocrine disorders including
               polycystic ovarian syndrome (PCOS/PCOD/PMOS), and metabolic bone
               disease.
@@ -468,23 +519,81 @@
             <div class="visit-list">
               <div class="visit-row">
                 <span>Appointment phone</span>
-                <strong><a href="tel:+919041250378">+91 90412 50378</a></strong>
+                <strong><a href="tel:+919041250378" data-conversion="click_call" data-placement="appointment_details">+91 90412 50378</a></strong>
               </div>
               <div class="visit-row">
-                <span>Clinic hours</span>
+                <span>Listed clinic hours</span>
                 <strong>Mon-Sat, 8:00 AM-5:00 PM</strong>
               </div>
               <div class="visit-row">
                 <span>Location</span>
                 <strong>Avanashi Road, Coimbatore</strong>
               </div>
+              <div class="visit-row">
+                <span>Languages listed</span>
+                <strong>Tamil, English, Hindi, Punjabi, Bengali</strong>
+              </div>
             </div>
-            <a class="button button-primary full-width" href="tel:+919041250378">Call Clinic</a>
+            <div class="appointment-panel-actions">
+              <a class="button button-primary full-width" href="tel:+919041250378" data-conversion="click_call" data-placement="appointment_panel">Call Clinic</a>
+              <a
+                class="button button-whatsapp full-width"
+                href="https://wa.me/919041250378?text=Hello%2C%20I%20would%20like%20to%20check%20appointment%20availability%20with%20Dr.%20Durairaj%20Arjunan%20at%20KMCH."
+                target="_blank"
+                rel="noopener noreferrer"
+                data-conversion="click_whatsapp"
+                data-placement="appointment_panel"
+              >WhatsApp for Appointment</a>
+            </div>
             <p class="fine-print">
               Kovai Medical Center and Hospital, 99, Avanashi Road,
-              Coimbatore-641014, India.
+              Coimbatore-641014, India. Call or WhatsApp to confirm current
+              consultation availability.
             </p>
           </aside>
+        </div>
+      </section>
+
+      <section class="appointment-guide" aria-labelledby="prepare-heading">
+        <div class="container">
+          <div class="appointment-guide-heading">
+            <div>
+              <p class="eyebrow">Plan Your Visit</p>
+              <h2 id="prepare-heading">Prepare for your endocrinology appointment</h2>
+            </div>
+            <p>
+              Bringing a concise medical record can make the consultation more useful.
+              Do not stop medicines or fast for tests unless the clinic has specifically
+              instructed you to do so.
+            </p>
+          </div>
+          <div class="appointment-guide-grid">
+            <article>
+              <h3>Bring with you</h3>
+              <ul>
+                <li>Current prescriptions and a complete medicine or supplement list</li>
+                <li>Recent blood-test, scan, biopsy, discharge and referral reports</li>
+                <li>Previous glucose, blood-pressure, weight or symptom records when relevant</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Clinic details</h3>
+              <p><strong>KMCH Main Center</strong><br />99, Avanashi Road, Coimbatore-641014.</p>
+              <p>Tamil, English, Hindi, Punjabi and Bengali consultations are listed on the profile. Call or WhatsApp to confirm current availability.</p>
+            </article>
+          </div>
+          <div class="appointment-guide-actions">
+            <a class="button button-primary" href="tel:+919041250378" data-conversion="click_call" data-placement="preparation">Call +91 90412 50378</a>
+            <a
+              class="button button-whatsapp"
+              href="https://wa.me/919041250378?text=Hello%2C%20I%20would%20like%20to%20check%20appointment%20availability%20with%20Dr.%20Durairaj%20Arjunan%20at%20KMCH."
+              target="_blank"
+              rel="noopener noreferrer"
+              data-conversion="click_whatsapp"
+              data-placement="preparation"
+            >WhatsApp for Appointment</a>
+            <a class="button button-secondary" href="https://maps.app.goo.gl/kianTCpHuHG1sExS7" target="_blank" rel="noopener noreferrer" data-conversion="click_directions" data-placement="preparation">Open KMCH Map</a>
+          </div>
         </div>
       </section>
 
@@ -504,6 +613,29 @@
         </nav>
         <div class="care-accordion" aria-label="Endocrinology care hierarchy">
           <details class="care-accordion-item" open>
+            <summary>
+              <span class="care-summary-text">
+                <span class="care-summary-label">Type 1, type 2, gestational and complex diabetes</span>
+                <span class="care-summary-title">Diabetes</span>
+              </span>
+            </summary>
+            <div class="care-accordion-body">
+              <ul class="care-list care-list-grid">
+                <li>Diabetes remission assessment and support</li>
+                <li>Type 1 Diabetes</li>
+                <li>Type 2 Diabetes</li>
+                <li>Gestational Diabetes</li>
+                <li>Monogenic Diabetes</li>
+                <li>MODY</li>
+                <li>LADA</li>
+                <li>Mitochondrial Diabetes</li>
+                <li>Lipodystrophy</li>
+              </ul>
+              <a class="care-detail-link" href="diabetes-specialist-coimbatore/">Diabetes specialist, diabetologist and sugar doctor information</a>
+            </div>
+          </details>
+
+          <details class="care-accordion-item">
             <summary>
               <span class="care-summary-text">
                 <span class="care-summary-label">Lifestyle, nutrition, exercise, GLP-1/GIP therapy</span>
@@ -527,29 +659,6 @@
                 </li>
               </ul>
               <a class="care-detail-link" href="obesity-weight-management-coimbatore/">Obesity and medical weight-management information</a>
-            </div>
-          </details>
-
-          <details class="care-accordion-item">
-            <summary>
-              <span class="care-summary-text">
-                <span class="care-summary-label">Type 1, type 2, gestational and complex diabetes</span>
-                <span class="care-summary-title">Diabetes</span>
-              </span>
-            </summary>
-            <div class="care-accordion-body">
-              <ul class="care-list care-list-grid">
-                <li>Diabetes remission assessment and support</li>
-                <li>Type 1 Diabetes</li>
-                <li>Type 2 Diabetes</li>
-                <li>Gestational Diabetes</li>
-                <li>Monogenic Diabetes</li>
-                <li>MODY</li>
-                <li>LADA</li>
-                <li>Mitochondrial Diabetes</li>
-                <li>Lipodystrophy</li>
-              </ul>
-              <a class="care-detail-link" href="diabetes-specialist-coimbatore/">Diabetes specialist, diabetologist and sugar doctor information</a>
             </div>
           </details>
 
@@ -849,8 +958,16 @@
       </div>
     </footer>
 
-    <div class="mobile-action">
-      <a class="button button-primary full-width" href="tel:+919041250378">Call for an Appointment</a>
+    <div class="mobile-action" aria-label="Appointment actions">
+      <a class="button button-primary" href="tel:+919041250378" data-conversion="click_call" data-placement="mobile_sticky">Call</a>
+      <a
+        class="button button-whatsapp"
+        href="https://wa.me/919041250378?text=Hello%2C%20I%20would%20like%20to%20check%20appointment%20availability%20with%20Dr.%20Durairaj%20Arjunan%20at%20KMCH."
+        target="_blank"
+        rel="noopener noreferrer"
+        data-conversion="click_whatsapp"
+        data-placement="mobile_sticky"
+      >WhatsApp</a>
     </div>
   </body>
 </html>
