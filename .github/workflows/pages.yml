@@ -36,6 +36,7 @@ jobs:
           cp -R pcos-pcod-pmos-endocrinologist-coimbatore _site/pcos-pcod-pmos-endocrinologist-coimbatore
           cp -R osteoporosis-metabolic-bone-disorders-coimbatore _site/osteoporosis-metabolic-bone-disorders-coimbatore
           cp -R adrenal-parathyroid-disorders-coimbatore _site/adrenal-parathyroid-disorders-coimbatore
+          cp -R ai-in-endocrinology _site/ai-in-endocrinology
           cp -R publications _site/publications
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
