@@ -17,6 +17,7 @@ Location: KMCH Main Center, Avanashi Road, Coimbatore-641014, India.
 - Thyroid Specialist and Thyroid Doctor in Coimbatore: https://drdurairajarjunan.com/thyroid-specialist-coimbatore/
 - PCOS, PCOD, PMOS, Testicular and Ovarian Disorders in Coimbatore: https://drdurairajarjunan.com/pcos-pcod-pmos-endocrinologist-coimbatore/
 - Metabolic Bone Disorders in Coimbatore: https://drdurairajarjunan.com/osteoporosis-metabolic-bone-disorders-coimbatore/
+- AI in Endocrinology: https://drdurairajarjunan.com/ai-in-endocrinology/
 - Publications, Academic Work, and Presentations: https://drdurairajarjunan.com/publications/
 - Neurabrix Bone Age Calculator: https://bone-age.neurabrix.co/
 
@@ -33,11 +34,12 @@ search intent and are not claims of ranking or superiority.
 The medical pages are general information, not individualized diagnosis or
 emergency advice. Appointment availability should be confirmed by phone.
 
-The homepage also explains the clinical significance of bone age assessment,
-includes a guided demonstration, and links to the Neurabrix Bone Age Calculator.
-The calculator is decision support and requires interpretation by an
-appropriately trained clinician.
+The homepage briefly introduces AI in endocrinology and links to the dedicated
+AI in Endocrinology page. That page explains the clinical significance of bone
+age assessment, includes a guided demonstration, and links to the Neurabrix
+Bone Age Calculator. The calculator is decision support and requires
+interpretation by an appropriately trained clinician.
 
-The main profile also provides Dr. Arjunan's August 2026 curriculum vitae and
-current research profile, including recent publications, conference roles, and
-scientific committee work.
+The main profile provides Dr. Arjunan's current professional profile, including
+training, experience, recognition, publications, academic talks, conference
+roles, and scientific committee work. It does not provide a downloadable CV.

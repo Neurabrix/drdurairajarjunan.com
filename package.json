@@ -5,7 +5,7 @@
   "description": "Static doctor profile website for drdurairajarjunan.com.",
   "scripts": {
     "generate:seo": "node scripts/generate-seo-pages.mjs",
-    "build": "npm run generate:seo && rm -rf _site && mkdir _site && cp index.html CNAME robots.txt sitemap.xml llms.txt favicon.svg _site/ && cp -R assets _site/assets && cp -R diabetes-specialist-coimbatore obesity-weight-management-coimbatore thyroid-specialist-coimbatore pcos-pcod-pmos-endocrinologist-coimbatore osteoporosis-metabolic-bone-disorders-coimbatore adrenal-parathyroid-disorders-coimbatore publications _site/",
+    "build": "npm run generate:seo && rm -rf _site && mkdir _site && cp index.html CNAME robots.txt sitemap.xml llms.txt favicon.svg _site/ && cp -R assets _site/assets && cp -R diabetes-specialist-coimbatore obesity-weight-management-coimbatore thyroid-specialist-coimbatore pcos-pcod-pmos-endocrinologist-coimbatore osteoporosis-metabolic-bone-disorders-coimbatore adrenal-parathyroid-disorders-coimbatore ai-in-endocrinology publications _site/",
     "validate": "node scripts/validate-site.mjs",
     "test": "npm run build && npm run validate",
     "start": "vite --host 0.0.0.0"

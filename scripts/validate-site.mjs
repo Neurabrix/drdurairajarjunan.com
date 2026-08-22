@@ -10,7 +10,8 @@ const pagePaths = [
   "thyroid-specialist-coimbatore/index.html",
   "pcos-pcod-pmos-endocrinologist-coimbatore/index.html",
   "osteoporosis-metabolic-bone-disorders-coimbatore/index.html",
-  "publications/index.html"
+  "publications/index.html",
+  "ai-in-endocrinology/index.html"
 ];
 
 const failures = [];
@@ -40,8 +41,11 @@ for (const pagePath of pagePaths) {
     check(tag[0].includes("data-conversion="), `${label}: untracked appointment link ${tag[0]}`);
   }
 
-  if (pagePath !== "index.html" && pagePath !== "publications/index.html") {
+  if (!["index.html", "publications/index.html", "ai-in-endocrinology/index.html"].includes(pagePath)) {
     check(html.includes('class="source-section"'), `${label}: missing authoritative sources`);
+  }
+
+  if (!["index.html", "publications/index.html"].includes(pagePath)) {
     check(html.includes('class="content-note"'), `${label}: missing clinical profile/update note`);
   }
 
@@ -66,29 +70,38 @@ for (const pagePath of pagePaths) {
 }
 
 check(existsSync(join(root, "assets/conversion-events.js")), "missing conversion event module");
-check(
-  existsSync(join(root, "assets/Dr_Durairaj_Arjunan_CV_2026_Aug.pdf")),
-  "missing August 2026 CV PDF"
-);
 
 const homepage = readFileSync(join(root, "index.html"), "utf8");
+const aiPage = readFileSync(join(root, "ai-in-endocrinology/index.html"), "utf8");
 const diabetesPage = readFileSync(join(root, "diabetes-specialist-coimbatore/index.html"), "utf8");
 const sitemap = readFileSync(join(root, "sitemap.xml"), "utf8");
 const llms = readFileSync(join(root, "llms.txt"), "utf8");
 
 check(homepage.includes('class="diabetes-feature"'), "homepage: missing featured diabetes pathway");
-check(homepage.includes('id="bone-age-tool"'), "homepage: missing bone age tool section");
 check(
-  homepage.includes('href="https://bone-age.neurabrix.co/"'),
-  "homepage: missing Neurabrix Bone Age Calculator link"
+  homepage.includes('class="ai-profile-mention"') && homepage.includes('href="ai-in-endocrinology/"'),
+  "homepage: missing concise AI in Endocrinology mention"
 );
 check(
-  homepage.includes("bone-age-calculator-clarity-master-4k.mp4"),
-  "homepage: missing Bone Age Calculator demo video"
+  !homepage.includes('id="bone-age-tool"') && !homepage.includes("bone-age-calculator-clarity-master-4k.mp4"),
+  "homepage: full Bone Age Calculator tool should be on its dedicated page"
 );
 check(
-  homepage.includes("decision support, not a diagnosis"),
-  "homepage: missing Bone Age Calculator clinical-use warning"
+  !homepage.includes('href="https://bone-age.neurabrix.co/"'),
+  "homepage: should link to the AI profile page instead of directly to the calculator"
+);
+check(
+  aiPage.includes('class="bone-age-feature bone-age-page-feature"') &&
+    aiPage.includes('href="https://bone-age.neurabrix.co/"'),
+  "AI in Endocrinology page: missing Bone Age Calculator feature"
+);
+check(
+  aiPage.includes("bone-age-calculator-clarity-master-4k.mp4"),
+  "AI in Endocrinology page: missing Bone Age Calculator demo video"
+);
+check(
+  aiPage.includes("decision support, not a diagnosis"),
+  "AI in Endocrinology page: missing clinical-use warning"
 );
 check(
   homepage.includes('href="diabetes-specialist-coimbatore/"'),
@@ -104,12 +117,24 @@ check(
   "sitemap: diabetes page should lead service pages"
 );
 check(llms.includes("Diabetes is the featured care area"), "llms.txt: missing diabetes priority context");
-check(
-  homepage.includes('href="assets/Dr_Durairaj_Arjunan_CV_2026_Aug.pdf"'),
-  "homepage: missing August 2026 CV download"
-);
+check(!homepage.includes("Dr_Durairaj_Arjunan_CV_2026_Aug.pdf"), "homepage: downloadable CV should be removed");
+check(!existsSync(join(root, "assets/Dr_Durairaj_Arjunan_CV_2026_Aug.pdf")), "downloadable CV asset should be removed");
 check(homepage.includes("ITSCON, Chennai"), "homepage: missing 2026 ITSCON roles");
 check(homepage.includes("Scientific committees"), "homepage: missing scientific committee work");
+for (const professionalDetail of [
+  "Dr. Sathinath Mukhopadhyay",
+  "Sheshnag Base Camp",
+  "12,800 feet",
+  "INI-SS AIIMS Merit List",
+  "INI-SS Common Merit List",
+  "poster display and presentation",
+  "Great PGI Quiz",
+  "North Zone Hematology Quiz",
+  "25th Tamil Nadu State Paediatrics Quiz",
+  "First Merit Certificate in Ophthalmology"
+]) {
+  check(homepage.includes(professionalDetail), `homepage: missing CV-backed professional detail ${professionalDetail}`);
+}
 for (const doi of [
   "10.1530/eo-25-0100",
   "10.4103/ijem.ijem_45_26",
@@ -119,7 +144,17 @@ for (const doi of [
   check(homepage.includes(doi), `homepage: missing recent publication DOI ${doi}`);
 }
 check(!homepage.includes("9626680378"), "homepage: personal CV phone should not replace clinic appointment details");
-check(llms.includes("August 2026 curriculum vitae"), "llms.txt: missing current CV context");
+for (const privateDetail of ["Subasri", "Native: Kangayam"]) {
+  check(!homepage.includes(privateDetail), `homepage: private CV detail should not be published (${privateDetail})`);
+}
+const publicationBlock = homepage.match(/<ol class="publication-list">([\s\S]*?)<\/ol>/)?.[1] || "";
+const publicationCount = (publicationBlock.match(/<li>/g) || []).length;
+check(publicationCount === 32, `homepage: expected 32 non-duplicate CV publication records, found ${publicationCount}`);
+const academicTalkBlock = homepage.match(/<summary>Academic talks<\/summary>[\s\S]*?<tbody>([\s\S]*?)<\/tbody>/)?.[1] || "";
+const academicTalkCount = (academicTalkBlock.match(/<tr>/g) || []).length;
+check(academicTalkCount === 30, `homepage: expected all 30 CV academic talks, found ${academicTalkCount}`);
+check(llms.includes("does not provide a downloadable CV"), "llms.txt: missing downloadable-CV removal context");
+check(llms.includes("dedicated\nAI in Endocrinology page"), "llms.txt: missing AI page context");
 
 if (failures.length) {
   console.error(failures.join("\n"));

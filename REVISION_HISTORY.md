@@ -1,5 +1,17 @@
 # Revision history
 
+## 2026-08-22 — AI in Endocrinology and CV reconciliation
+
+- Moved the full Neurabrix Bone Age Calculator feature and guided demo to a
+  dedicated AI in Endocrinology page, while retaining a concise professional
+  interest mention on the doctor-profile homepage.
+- Removed the downloadable CV link and website PDF asset.
+- Reconciled the public professional profile with the August 2026 CV, including
+  training, high-altitude medical work, distinct INI-SS ranks, presentation
+  recognition, quizzes, 30 academic talks, and 32 unique publications.
+- Kept personal phone and WhatsApp details, spouse information, and native-place
+  information from the CV off the public website.
+
 ## 2026-08-22 — August 2026 CV and academic profile
 
 - Added the August 2026 CV as a downloadable website asset and expanded the

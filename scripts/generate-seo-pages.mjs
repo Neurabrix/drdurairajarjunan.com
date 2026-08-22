@@ -11,7 +11,7 @@ const site = {
   emailHref: "mailto:duraipgi@gmail.com",
   mapHref: "https://maps.app.goo.gl/kianTCpHuHG1sExS7",
   image: "https://drdurairajarjunan.com/assets/durairaj-photo.jpg",
-  dateModified: "2026-08-15",
+  dateModified: "2026-08-22",
   homepageDateModified: "2026-08-22"
 };
 
@@ -437,13 +437,28 @@ const publicationPage = {
     "Ongoing work",
     "International presentations and 2026 national conference roles",
     "Scientific committee work",
-    "Downloadable August 2026 curriculum vitae on the main profile",
+    "Professional profile reconciled with the August 2026 curriculum vitae",
     "Academic talks"
   ]
 };
 
+const aiEndocrinologyPage = {
+  slug: "ai-in-endocrinology",
+  navTitle: "AI in Endocrinology",
+  eyebrow: "Clinical AI",
+  title: "AI in Endocrinology",
+  pageTitle: "AI in Endocrinology",
+  seoTitle: "AI in Endocrinology | Dr Durairaj Arjunan",
+  label: "Clinician-led exploration of responsible artificial intelligence for endocrine care",
+  meta:
+    "Explore Dr. Durairaj Arjunan's interest in AI in endocrinology and the clinician-guided Neurabrix Bone Age Calculator workflow.",
+  dateModified: "2026-08-22",
+  items: []
+};
+
 const pages = [
   ...[...carePages].sort((a, b) => (b.priority || 0) - (a.priority || 0)),
+  aiEndocrinologyPage,
   publicationPage
 ];
 
@@ -469,6 +484,53 @@ function renderPageNav(activeSlug) {
 }
 
 function renderContent(page) {
+  if (page.slug === "ai-in-endocrinology") {
+    return `<article class="service-introduction ai-introduction">
+        <p class="eyebrow">Clinician-led technology</p>
+        <p>Artificial intelligence can support selected parts of endocrine assessment when it is used transparently, reviewed by a qualified clinician, and interpreted alongside the patient's history, examination, and investigations.</p>
+        <p>This page presents Dr. Durairaj Arjunan's work and interest at the intersection of endocrinology and responsible clinical AI. The current featured application is a clinician-guided bone age workflow.</p>
+      </article>
+      <section class="bone-age-feature bone-age-page-feature" aria-labelledby="bone-age-heading">
+        <div class="bone-age-feature-grid">
+          <div class="bone-age-copy">
+            <p class="eyebrow">Featured Clinical Decision-Support Tool</p>
+            <h2 id="bone-age-heading">Neurabrix Bone Age Calculator</h2>
+            <p>Bone age is an estimate of skeletal maturity based on a hand and wrist radiograph. Comparing skeletal age with chronological age can help clinicians assess whether a child's bones are maturing as expected.</p>
+            <p>This comparison can add useful context when evaluating growth, pubertal timing, and endocrine conditions. The Neurabrix tool supports the review workflow with an age estimate, range, and reference images for clinician assessment.</p>
+            <p class="bone-age-note">The result is decision support, not a diagnosis. It should be interpreted with the child's history, examination, and other investigations by an appropriately trained clinician.</p>
+            <div class="actions">
+              <a class="button button-primary" href="https://bone-age.neurabrix.co/" target="_blank" rel="noopener noreferrer">Open the Calculator on Neurabrix</a>
+            </div>
+          </div>
+          <div class="bone-age-demo" aria-labelledby="bone-age-demo-heading">
+            <div class="bone-age-demo-heading">
+              <p class="eyebrow">Demo Video</p>
+              <h3 id="bone-age-demo-heading">See the guided workflow</h3>
+            </div>
+            <video controls playsinline preload="metadata" poster="https://bone-age.neurabrix.co/manual/media/bone-age-calculator-clarity-preview.gif" aria-label="Guided Bone Age Calculator demo from radiograph upload to clinician review">
+              <source src="https://bone-age.neurabrix.co/manual/media/bone-age-calculator-clarity-master-4k.mp4" type="video/mp4" />
+              Your browser cannot play this video. <a href="https://bone-age.neurabrix.co/manual/">Watch the Bone Age Calculator demo on Neurabrix</a>.
+            </video>
+            <a class="bone-age-demo-link" href="https://bone-age.neurabrix.co/manual/" target="_blank" rel="noopener noreferrer">View the complete demo guide on Neurabrix <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+      <article class="info-block ai-principles">
+        <h2>Responsible clinical use</h2>
+        <ul class="clean-list">
+          <li>Use AI output as supporting information, not as a standalone diagnosis.</li>
+          <li>Review image quality, clinical context, and any uncertainty before acting.</li>
+          <li>Protect patient privacy and use appropriate clinical governance.</li>
+          <li>Seek specialist assessment when growth, puberty, or hormone concerns require evaluation.</li>
+        </ul>
+      </article>
+      <article class="info-block ai-profile-context">
+        <h2>Clinical context</h2>
+        <p>Bone age assessment may form one part of a broader endocrine evaluation. The appropriate investigation and interpretation depend on the individual clinical question.</p>
+        <p class="content-note">Clinical profile: Dr. Durairaj Arjunan, MBBS, MD Internal Medicine, DM Endocrinology. Page updated 2026-08-22. This general information is not a diagnosis or treatment plan.</p>
+      </article>`;
+  }
+
   const intro = page.intro
     ? `<article class="service-introduction">
         <p class="eyebrow">Specialist Care at KMCH Coimbatore</p>
@@ -754,7 +816,7 @@ function renderPage(page) {
     <meta name="twitter:description" content="${escapeHtml(page.meta)}" />
     <meta name="twitter:image" content="${site.image}" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../assets/styles.css?v=20260822-cv" />
+    <link rel="stylesheet" href="../assets/styles.css?v=20260822-ai" />
     <script src="../assets/conversion-events.js?v=20260815" defer></script>
     <script type="application/ld+json">
       ${renderJsonLd(page)}
@@ -890,14 +952,15 @@ search intent and are not claims of ranking or superiority.
 The medical pages are general information, not individualized diagnosis or
 emergency advice. Appointment availability should be confirmed by phone.
 
-The homepage also explains the clinical significance of bone age assessment,
-includes a guided demonstration, and links to the Neurabrix Bone Age Calculator.
-The calculator is decision support and requires interpretation by an
-appropriately trained clinician.
+The homepage briefly introduces AI in endocrinology and links to the dedicated
+AI in Endocrinology page. That page explains the clinical significance of bone
+age assessment, includes a guided demonstration, and links to the Neurabrix
+Bone Age Calculator. The calculator is decision support and requires
+interpretation by an appropriately trained clinician.
 
-The main profile also provides Dr. Arjunan's August 2026 curriculum vitae and
-current research profile, including recent publications, conference roles, and
-scientific committee work.
+The main profile provides Dr. Arjunan's current professional profile, including
+training, experience, recognition, publications, academic talks, conference
+roles, and scientific committee work. It does not provide a downloadable CV.
 `;
 
 writeFileSync(join(process.cwd(), "llms.txt"), llms);
@@ -906,7 +969,7 @@ const sitemapUrls = [
   ["", "1.0", site.homepageDateModified],
   ...pages.map((page) => [
     `${page.slug}/`,
-    page.slug === "diabetes-specialist-coimbatore" ? "0.9" : page.slug === "publications" ? "0.7" : "0.8",
+    page.slug === "diabetes-specialist-coimbatore" ? "0.9" : ["publications", "ai-in-endocrinology"].includes(page.slug) ? "0.7" : "0.8",
     page.dateModified || site.dateModified
   ])
 ];
