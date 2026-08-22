@@ -816,7 +816,7 @@ function renderPage(page) {
     <meta name="twitter:description" content="${escapeHtml(page.meta)}" />
     <meta name="twitter:image" content="${site.image}" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../assets/styles.css?v=20260822-story" />
+    <link rel="stylesheet" href="../assets/styles.css?v=20260822-align" />
     <script src="../assets/conversion-events.js?v=20260815" defer></script>
     <script type="application/ld+json">
       ${renderJsonLd(page)}

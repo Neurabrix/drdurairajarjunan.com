@@ -1,5 +1,12 @@
 # Revision history
 
+## 2026-08-22 — Consistent body-copy alignment
+
+- Extended justified alignment to body paragraphs and multi-line list entries
+  throughout the homepage and specialist pages, including narrow mobile views.
+- Kept headings, navigation labels, buttons, metadata labels and single-line
+  controls naturally aligned to prevent unnatural spacing.
+
 ## 2026-08-22 — Homepage storyline and reading alignment
 
 - Reordered the homepage into a comprehensive doctor-profile narrative: identity,

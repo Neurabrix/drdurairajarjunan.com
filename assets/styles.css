@@ -339,21 +339,12 @@ h3 {
   font-size: 1.15rem;
 }
 
-@media (min-width: 641px) {
-  .lead,
-  .section-lead,
-  .section-copy p:not(.eyebrow),
-  .diabetes-feature-grid > div:first-child > p:not(.eyebrow),
-  .ai-profile-mention-card p:not(.eyebrow),
-  .appointment-guide-heading > p,
-  .service-introduction > p:not(.eyebrow),
-  .faq-item p,
-  .bone-age-copy > p:not(.eyebrow) {
-    text-align: justify;
-    text-align-last: left;
-    text-justify: inter-word;
-    hyphens: auto;
-  }
+main p:not(.eyebrow),
+main li {
+  text-align: justify;
+  text-align-last: left;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 .actions {

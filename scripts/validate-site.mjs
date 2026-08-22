@@ -101,7 +101,8 @@ for (let index = 1; index < homepageStoryMarkers.length; index += 1) {
   );
 }
 check(
-  styles.includes("text-align: justify") && styles.includes("text-align-last: left") && styles.includes("hyphens: auto"),
+  styles.includes("main p:not(.eyebrow)") && styles.includes("main li") &&
+    styles.includes("text-align: justify") && styles.includes("text-align-last: left") && styles.includes("hyphens: auto"),
   "styles: missing controlled narrative text alignment"
 );
 check(
