@@ -1,5 +1,14 @@
 # Revision history
 
+## 2026-08-22 — Homepage storyline and reading alignment
+
+- Reordered the homepage into a comprehensive doctor-profile narrative: identity,
+  highlights, profile, featured diabetes care, wider care areas, credentials,
+  research, clinical AI, and appointment preparation.
+- Matched the section navigation to the same reading order.
+- Added controlled paragraph justification and hyphenation on desktop and tablet,
+  while retaining comfortable left alignment on narrow mobile screens.
+
 ## 2026-08-22 — AI in Endocrinology and CV reconciliation
 
 - Moved the full Neurabrix Bone Age Calculator feature and guided demo to a

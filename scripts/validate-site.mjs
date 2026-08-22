@@ -76,11 +76,33 @@ const aiPage = readFileSync(join(root, "ai-in-endocrinology/index.html"), "utf8"
 const diabetesPage = readFileSync(join(root, "diabetes-specialist-coimbatore/index.html"), "utf8");
 const sitemap = readFileSync(join(root, "sitemap.xml"), "utf8");
 const llms = readFileSync(join(root, "llms.txt"), "utf8");
+const styles = readFileSync(join(root, "assets/styles.css"), "utf8");
 
 check(homepage.includes('class="diabetes-feature"'), "homepage: missing featured diabetes pathway");
 check(
   homepage.includes('class="ai-profile-mention"') && homepage.includes('href="ai-in-endocrinology/"'),
   "homepage: missing concise AI in Endocrinology mention"
+);
+const homepageStoryMarkers = [
+  'class="hero-section"',
+  'class="trust-strip"',
+  'id="about"',
+  'class="diabetes-feature"',
+  'id="care"',
+  'id="credentials"',
+  'id="research"',
+  'class="ai-profile-mention"',
+  'id="prepare"'
+];
+for (let index = 1; index < homepageStoryMarkers.length; index += 1) {
+  check(
+    homepage.indexOf(homepageStoryMarkers[index - 1]) < homepage.indexOf(homepageStoryMarkers[index]),
+    `homepage: story order is incorrect around ${homepageStoryMarkers[index]}`
+  );
+}
+check(
+  styles.includes("text-align: justify") && styles.includes("text-align-last: left") && styles.includes("hyphens: auto"),
+  "styles: missing controlled narrative text alignment"
 );
 check(
   !homepage.includes('id="bone-age-tool"') && !homepage.includes("bone-age-calculator-clarity-master-4k.mp4"),
