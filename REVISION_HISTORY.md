@@ -1,5 +1,26 @@
 # Revision history
 
+## 2026-08-22 — August 2026 CV and academic profile
+
+- Added the August 2026 CV as a downloadable website asset and expanded the
+  profile with the CV's research-collaboration focus.
+- Added four newly listed, non-duplicate publications with verified DOI links.
+- Added 2026 national conference talks, judging and moderation roles, plus
+  scientific committee work for TRENDO, ITSCON, DECON, and ESICON.
+- Refined the 2019-2021 endocrinology experience and corrected the Innsbruck
+  presentation year from the supplied CV.
+- Kept the website's clinic appointment number separate from personal contact
+  details contained in the downloadable CV.
+
+## 2026-08-17 — Neurabrix Bone Age Calculator feature
+
+- Added a homepage section explaining what bone age assessment is and why
+  skeletal maturity can matter in growth, pubertal and endocrine evaluation.
+- Embedded the guided Neurabrix workflow demo with accessible playback and a
+  link to the complete demo guide.
+- Added a direct call to action to the Bone Age Calculator on Neurabrix, with a
+  clear clinician-review and decision-support warning.
+
 ## 2026-08-15 — Diabetes-first search and patient pathway
 
 - Promoted diabetes as the featured care area across the homepage, navigation,

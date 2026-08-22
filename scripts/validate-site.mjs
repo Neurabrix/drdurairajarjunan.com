@@ -66,6 +66,10 @@ for (const pagePath of pagePaths) {
 }
 
 check(existsSync(join(root, "assets/conversion-events.js")), "missing conversion event module");
+check(
+  existsSync(join(root, "assets/Dr_Durairaj_Arjunan_CV_2026_Aug.pdf")),
+  "missing August 2026 CV PDF"
+);
 
 const homepage = readFileSync(join(root, "index.html"), "utf8");
 const diabetesPage = readFileSync(join(root, "diabetes-specialist-coimbatore/index.html"), "utf8");
@@ -73,6 +77,19 @@ const sitemap = readFileSync(join(root, "sitemap.xml"), "utf8");
 const llms = readFileSync(join(root, "llms.txt"), "utf8");
 
 check(homepage.includes('class="diabetes-feature"'), "homepage: missing featured diabetes pathway");
+check(homepage.includes('id="bone-age-tool"'), "homepage: missing bone age tool section");
+check(
+  homepage.includes('href="https://bone-age.neurabrix.co/"'),
+  "homepage: missing Neurabrix Bone Age Calculator link"
+);
+check(
+  homepage.includes("bone-age-calculator-clarity-master-4k.mp4"),
+  "homepage: missing Bone Age Calculator demo video"
+);
+check(
+  homepage.includes("decision support, not a diagnosis"),
+  "homepage: missing Bone Age Calculator clinical-use warning"
+);
 check(
   homepage.includes('href="diabetes-specialist-coimbatore/"'),
   "homepage: missing direct diabetes-page link"
@@ -87,6 +104,22 @@ check(
   "sitemap: diabetes page should lead service pages"
 );
 check(llms.includes("Diabetes is the featured care area"), "llms.txt: missing diabetes priority context");
+check(
+  homepage.includes('href="assets/Dr_Durairaj_Arjunan_CV_2026_Aug.pdf"'),
+  "homepage: missing August 2026 CV download"
+);
+check(homepage.includes("ITSCON, Chennai"), "homepage: missing 2026 ITSCON roles");
+check(homepage.includes("Scientific committees"), "homepage: missing scientific committee work");
+for (const doi of [
+  "10.1530/eo-25-0100",
+  "10.4103/ijem.ijem_45_26",
+  "10.1007/s12288-025-02179-5",
+  "10.4103/ijemcr.ijemcr_45_25"
+]) {
+  check(homepage.includes(doi), `homepage: missing recent publication DOI ${doi}`);
+}
+check(!homepage.includes("9626680378"), "homepage: personal CV phone should not replace clinic appointment details");
+check(llms.includes("August 2026 curriculum vitae"), "llms.txt: missing current CV context");
 
 if (failures.length) {
   console.error(failures.join("\n"));

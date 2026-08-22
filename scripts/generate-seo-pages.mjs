@@ -11,7 +11,8 @@ const site = {
   emailHref: "mailto:duraipgi@gmail.com",
   mapHref: "https://maps.app.goo.gl/kianTCpHuHG1sExS7",
   image: "https://drdurairajarjunan.com/assets/durairaj-photo.jpg",
-  dateModified: "2026-08-15"
+  dateModified: "2026-08-15",
+  homepageDateModified: "2026-08-22"
 };
 
 const carePages = [
@@ -425,14 +426,18 @@ const publicationPage = {
   label: "Research spans diabetes, metabolic bone disease, thyroid and adrenal disease, endocrine oncology, and rare endocrine presentations.",
   meta:
     "Research and publications page for Dr. Durairaj Arjunan, consultant endocrinologist at KMCH, Coimbatore.",
+  dateModified: "2026-08-22",
   items: [
-    "30+ original studies and publications",
+    "30+ studies and publications listed in the August 2026 CV",
+    "2026 research in Endocrine Oncology and the Indian Journal of Endocrinology and Metabolism",
     "NEJM first-author publication",
     "HR-pQCT bone microarchitecture research",
     "Google Scholar Profile",
     "Selected publications",
     "Ongoing work",
-    "International presentations",
+    "International presentations and 2026 national conference roles",
+    "Scientific committee work",
+    "Downloadable August 2026 curriculum vitae on the main profile",
     "Academic talks"
   ]
 };
@@ -635,7 +640,7 @@ function renderJsonLd(page) {
       url,
       name: page.pageTitle,
       description: page.meta,
-      dateModified: site.dateModified,
+      dateModified: page.dateModified || site.dateModified,
       isPartOf: { "@id": `${site.origin}/#website` },
       about: { "@id": `${site.origin}/#doctor` },
       primaryImageOfPage: { "@id": `${site.origin}/#photo` },
@@ -749,7 +754,7 @@ function renderPage(page) {
     <meta name="twitter:description" content="${escapeHtml(page.meta)}" />
     <meta name="twitter:image" content="${site.image}" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../assets/styles.css?v=20260815-conversion" />
+    <link rel="stylesheet" href="../assets/styles.css?v=20260822-cv" />
     <script src="../assets/conversion-events.js?v=20260815" defer></script>
     <script type="application/ld+json">
       ${renderJsonLd(page)}
@@ -870,6 +875,7 @@ Location: KMCH Main Center, Avanashi Road, Coimbatore-641014, India.
 
 - Homepage: ${site.origin}/
 ${pages.map((page) => `- ${page.pageTitle}: ${site.origin}/${page.slug}/`).join("\n")}
+- Neurabrix Bone Age Calculator: https://bone-age.neurabrix.co/
 
 ## Page Scope
 
@@ -883,15 +889,25 @@ search intent and are not claims of ranking or superiority.
 
 The medical pages are general information, not individualized diagnosis or
 emergency advice. Appointment availability should be confirmed by phone.
+
+The homepage also explains the clinical significance of bone age assessment,
+includes a guided demonstration, and links to the Neurabrix Bone Age Calculator.
+The calculator is decision support and requires interpretation by an
+appropriately trained clinician.
+
+The main profile also provides Dr. Arjunan's August 2026 curriculum vitae and
+current research profile, including recent publications, conference roles, and
+scientific committee work.
 `;
 
 writeFileSync(join(process.cwd(), "llms.txt"), llms);
 
 const sitemapUrls = [
-  ["", "1.0"],
+  ["", "1.0", site.homepageDateModified],
   ...pages.map((page) => [
     `${page.slug}/`,
-    page.slug === "diabetes-specialist-coimbatore" ? "0.9" : page.slug === "publications" ? "0.7" : "0.8"
+    page.slug === "diabetes-specialist-coimbatore" ? "0.9" : page.slug === "publications" ? "0.7" : "0.8",
+    page.dateModified || site.dateModified
   ])
 ];
 
@@ -899,9 +915,9 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sitemapUrls
   .map(
-    ([path, priority]) => `  <url>
+    ([path, priority, lastmod]) => `  <url>
     <loc>${site.origin}/${path}</loc>
-    <lastmod>${site.dateModified}</lastmod>
+    <lastmod>${lastmod}</lastmod>
     <priority>${priority}</priority>
   </url>`
   )
